@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": "materials",
+      "name": "Materials",
+      "icon": "iron_ingot",
+      "description": "Raw materials and ingots"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "icon": "diamond_pickaxe",
+      "description": "Tools for mining and crafting"
+    },
+    {
+      "id": "blocks",
+      "name": "Blocks",
+      "icon": "oak_planks",
+      "description": "Building blocks"
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "icon": "bread",
+      "description": "Food and consumables"
+    },
+    {
+      "id": "decoration",
+      "name": "Decoration",
+      "icon": "torch",
+      "description": "Decorative items"
+    }
+  ]
+}

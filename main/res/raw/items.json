@@ -1,0 +1,365 @@
+{
+  "items": [
+    {
+      "id": "copper_ingot",
+      "name": "Copper Ingot",
+      "category": "materials",
+      "image": "cooper",
+      "description": "A copper ingot is a metal ingot obtained by smelting raw copper or copper ore.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "raw_copper",
+          "tool": "furnace",
+          "description": "Smelt raw copper in a furnace or blast furnace"
+        }
+      ],
+      "usedIn": ["lightning_rod", "spyglass", "copper_block"],
+      "relatedItems": ["raw_copper", "copper_ore", "furnace"]
+    },
+    {
+      "id": "iron_ingot",
+      "name": "Iron Ingot",
+      "category": "materials",
+      "image": "iron",
+      "description": "Iron ingots are versatile metal ingots used extensively in crafting.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "raw_iron",
+          "tool": "furnace",
+          "description": "Smelt raw iron or iron ore in a furnace"
+        }
+      ],
+      "usedIn": ["iron_pickaxe", "iron_sword", "bucket", "shield"],
+      "relatedItems": ["raw_iron", "iron_ore", "furnace"]
+    },
+    {
+      "id": "gold_ingot",
+      "name": "Gold Ingot",
+      "category": "materials",
+      "image": "gold",
+      "description": "Gold ingots are used to craft various golden items and powered rails.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "raw_gold",
+          "tool": "furnace",
+          "description": "Smelt raw gold or gold ore in a furnace"
+        }
+      ],
+      "usedIn": ["golden_apple", "powered_rail", "clock"],
+      "relatedItems": ["raw_gold", "gold_ore", "furnace"]
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "category": "materials",
+      "image": "diamond",
+      "description": "Diamonds are rare gems used to craft powerful tools and armor.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "diamond_ore",
+          "tool": "iron_pickaxe",
+          "description": "Mine diamond ore with an iron pickaxe or better"
+        }
+      ],
+      "usedIn": ["diamond_pickaxe", "diamond_sword", "enchanting_table"],
+      "relatedItems": ["diamond_ore", "diamond_pickaxe"]
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "category": "materials",
+      "image": "emerald",
+      "description": "Emeralds are rare gems primarily used for trading with villagers.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "emerald_ore",
+          "tool": "iron_pickaxe",
+          "description": "Mine emerald ore with an iron pickaxe or better"
+        },
+        {
+          "method": "trading",
+          "description": "Trade with villagers"
+        }
+      ],
+      "usedIn": ["trading"],
+      "relatedItems": ["emerald_ore", "villager"]
+    },
+    {
+      "id": "coal",
+      "name": "Coal",
+      "category": "materials",
+      "image": "coal",
+      "description": "Coal is a common fuel source and crafting ingredient.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "coal_ore",
+          "tool": "wooden_pickaxe",
+          "description": "Mine coal ore with any pickaxe"
+        }
+      ],
+      "usedIn": ["torch", "campfire"],
+      "relatedItems": ["coal_ore", "torch"]
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone Dust",
+      "category": "materials",
+      "image": "redstone",
+      "description": "Redstone dust is used for creating redstone circuits and mechanisms.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "redstone_ore",
+          "tool": "iron_pickaxe",
+          "description": "Mine redstone ore with an iron pickaxe or better"
+        }
+      ],
+      "usedIn": ["redstone_torch", "piston", "repeater"],
+      "relatedItems": ["redstone_ore", "redstone_torch"]
+    },
+    {
+      "id": "lapis_lazuli",
+      "name": "Lapis Lazuli",
+      "category": "materials",
+      "image": "lapis_lazuli",
+      "description": "Lapis lazuli is a blue dye and enchanting ingredient.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "lapis_ore",
+          "tool": "stone_pickaxe",
+          "description": "Mine lapis ore with a stone pickaxe or better"
+        }
+      ],
+      "usedIn": ["blue_dye", "enchanting"],
+      "relatedItems": ["lapis_ore", "enchanting_table"]
+    },
+    {
+      "id": "netherite_ingot",
+      "name": "Netherite Ingot",
+      "category": "materials",
+      "image": "netherite",
+      "description": "Netherite ingots are the most durable material for tools and armor.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "netherite_scrap",
+          "tool": "crafting_table",
+          "description": "Combine 4 netherite scraps with 4 gold ingots"
+        }
+      ],
+      "usedIn": ["netherite_pickaxe", "netherite_sword"],
+      "relatedItems": ["netherite_scrap", "ancient_debris"]
+    },
+    {
+      "id": "stick",
+      "name": "Stick",
+      "category": "materials",
+      "image": "stick",
+      "description": "Sticks are basic crafting components for tools and torches.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "planks",
+          "description": "Craft from 2 wooden planks vertically"
+        }
+      ],
+      "usedIn": ["torch", "wooden_pickaxe", "sword"],
+      "relatedItems": ["planks", "torch"]
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "category": "decoration",
+      "image": "torch",
+      "description": "Torches provide light and prevent mob spawning.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "coal",
+          "tool": "crafting_table",
+          "description": "Combine 1 coal/charcoal with 1 stick"
+        }
+      ],
+      "usedIn": ["lighting"],
+      "relatedItems": ["coal", "stick"]
+    },
+    {
+      "id": "crafting_table",
+      "name": "Crafting Table",
+      "category": "tools",
+      "image": "crafting_table",
+      "description": "A crafting table provides a 3×3 crafting grid for advanced recipes.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "planks",
+          "description": "Craft from 4 wooden planks in a 2×2 grid"
+        }
+      ],
+      "usedIn": ["crafting"],
+      "relatedItems": ["planks"]
+    },
+    {
+      "id": "furnace",
+      "name": "Furnace",
+      "category": "tools",
+      "image": "furnace",
+      "description": "A furnace is used for smelting ores and cooking food.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "cobblestone",
+          "tool": "crafting_table",
+          "description": "Craft from 8 cobblestone in a ring shape"
+        }
+      ],
+      "usedIn": ["smelting"],
+      "relatedItems": ["cobblestone", "coal"]
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "category": "tools",
+      "image": "chest",
+      "description": "Chests are storage blocks that can hold items.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "planks",
+          "tool": "crafting_table",
+          "description": "Craft from 8 wooden planks in a ring shape"
+        }
+      ],
+      "usedIn": ["storage"],
+      "relatedItems": ["planks"]
+    },
+    {
+      "id": "wooden_pickaxe",
+      "name": "Wooden Pickaxe",
+      "category": "tools",
+      "image": "wooden_pickaxe",
+      "description": "A basic pickaxe for mining stone and coal ore.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "planks",
+          "tool": "crafting_table",
+          "description": "Craft from 3 planks and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining"],
+      "relatedItems": ["planks", "stick"]
+    },
+    {
+      "id": "stone_pickaxe",
+      "name": "Stone Pickaxe",
+      "category": "tools",
+      "image": "stone_pickaxe",
+      "description": "A stone pickaxe for mining iron ore and other resources.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "cobblestone",
+          "tool": "crafting_table",
+          "description": "Craft from 3 cobblestone and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining"],
+      "relatedItems": ["cobblestone", "stick"]
+    },
+    {
+      "id": "iron_pickaxe",
+      "name": "Iron Pickaxe",
+      "category": "tools",
+      "image": "iron_pickaxe",
+      "description": "An iron pickaxe for mining diamond, gold, and redstone ores.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "iron_ingot",
+          "tool": "crafting_table",
+          "description": "Craft from 3 iron ingots and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining"],
+      "relatedItems": ["iron_ingot", "stick"]
+    },
+    {
+      "id": "diamond_pickaxe",
+      "name": "Diamond Pickaxe",
+      "category": "tools",
+      "image": "diamond_pickaxe",
+      "description": "A powerful pickaxe capable of mining obsidian and ancient debris.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "diamond",
+          "tool": "crafting_table",
+          "description": "Craft from 3 diamonds and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining"],
+      "relatedItems": ["diamond", "stick"]
+    },
+    {
+      "id": "bread",
+      "name": "Bread",
+      "category": "food",
+      "image": "bread",
+      "description": "Bread is a food item that restores hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "wheat",
+          "tool": "crafting_table",
+          "description": "Craft from 3 wheat"
+        }
+      ],
+      "usedIn": ["food"],
+      "relatedItems": ["wheat"]
+    },
+    {
+      "id": "oak_planks",
+      "name": "Oak Planks",
+      "category": "blocks",
+      "image": "oak_planks",
+      "description": "Oak planks are basic building blocks crafted from oak logs.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": "oak_log",
+          "description": "Craft from 1 oak log (yields 4 planks)"
+        }
+      ],
+      "usedIn": ["crafting_table", "stick", "chest"],
+      "relatedItems": ["oak_log", "stick"]
+    }
+  ]
+}
