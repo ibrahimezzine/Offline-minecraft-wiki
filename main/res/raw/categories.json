@@ -4,31 +4,91 @@
       "id": "materials",
       "name": "Materials",
       "icon": "iron_ingot",
-      "description": "Raw materials and ingots"
+      "description": "Raw materials, ingots, gems, and crafting ingredients"
     },
     {
       "id": "tools",
       "name": "Tools",
       "icon": "diamond_pickaxe",
-      "description": "Tools for mining and crafting"
+      "description": "Pickaxes, axes, shovels, hoes, and utility tools"
     },
     {
-      "id": "blocks",
-      "name": "Blocks",
-      "icon": "oak_planks",
-      "description": "Building blocks"
+      "id": "weapons",
+      "name": "Weapons",
+      "icon": "diamond_sword",
+      "description": "Swords, bows, crossbows, tridents, and combat items"
+    },
+    {
+      "id": "armor",
+      "name": "Armor",
+      "icon": "diamond_chestplate",
+      "description": "Helmets, chestplates, leggings, boots, and horse armor"
     },
     {
       "id": "food",
       "name": "Food",
       "icon": "bread",
-      "description": "Food and consumables"
+      "description": "Raw and cooked foods, fruits, vegetables, and consumables"
     },
     {
-      "id": "decoration",
-      "name": "Decoration",
-      "icon": "torch",
-      "description": "Decorative items"
+      "id": "building_blocks",
+      "name": "Building Blocks",
+      "icon": "oak_door",
+      "description": "Doors, signs, decorative blocks, and construction items"
+    },
+    {
+      "id": "brewing",
+      "name": "Brewing",
+      "icon": "brewing_stand",
+      "description": "Potions, brewing ingredients, and alchemy items"
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "icon": "oak_boat",
+      "description": "Boats, minecarts, and mobility items"
+    },
+    {
+      "id": "dyes",
+      "name": "Dyes",
+      "icon": "red_dye",
+      "description": "All 16 colors of dyes and colored items"
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "icon": "music_disc_13",
+      "description": "Music discs and related items"
+    },
+    {
+      "id": "utility",
+      "name": "Utility",
+      "icon": "bucket",
+      "description": "Buckets, leads, name tags, and functional items"
+    },
+    {
+      "id": "combat",
+      "name": "Combat",
+      "icon": "arrow",
+      "description": "Arrows, shields, totems, and combat accessories"
+    },
+    {
+      "id": "farming",
+      "name": "Farming",
+      "icon": "wheat",
+      "description": "Seeds, crops, farming tools, and agricultural items"
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone",
+      "icon": "redstone",
+      "description": "Redstone components, comparators, repeaters, and mechanisms"
+    },
+    {
+      "id": "decorative",
+      "name": "Decorative",
+      "icon": "flower_pot",
+      "description": "Paintings, item frames, pottery sherds, and decorations"
     }
   ]
 }

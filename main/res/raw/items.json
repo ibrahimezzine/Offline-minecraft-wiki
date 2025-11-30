@@ -1,105 +1,1487 @@
 {
   "items": [
     {
-      "id": "copper_ingot",
-      "name": "Copper Ingot",
-      "category": "materials",
-      "image": "cooper",
-      "description": "A copper ingot is a metal ingot obtained by smelting raw copper or copper ore.",
+      "id": "wooden_pickaxe",
+      "name": "Wooden Pickaxe",
+      "category": "tools",
+      "image": "wooden_pickaxe",
+      "description": "A basic pickaxe made from wood and sticks. Can mine stone and coal ore.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 wood planks and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining_stone", "mining_coal_ore"],
+      "relatedItems": ["stick", "oak_planks", "stone_pickaxe", "wooden_axe"],
+      "recipeIds": ["wooden_pickaxe_craft"]
+    },
+    {
+      "id": "stone_pickaxe",
+      "name": "Stone Pickaxe",
+      "category": "tools",
+      "image": "stone_pickaxe",
+      "description": "A pickaxe made from cobblestone. More durable than wood and can mine iron ore.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 cobblestone and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining_iron_ore", "mining_copper_ore"],
+      "relatedItems": ["stick", "cobblestone", "wooden_pickaxe", "iron_pickaxe"],
+      "recipeIds": ["stone_pickaxe_craft"]
+    },
+    {
+      "id": "iron_pickaxe",
+      "name": "Iron Pickaxe",
+      "category": "tools",
+      "image": "iron_pickaxe",
+      "description": "A reliable pickaxe made from iron. Required to mine diamonds and other valuable ores.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 iron ingots and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining_diamond_ore", "mining_redstone_ore", "mining_gold_ore"],
+      "relatedItems": ["stick", "iron_ingot", "stone_pickaxe", "diamond_pickaxe"],
+      "recipeIds": ["iron_pickaxe_craft"]
+    },
+    {
+      "id": "diamond_pickaxe",
+      "name": "Diamond Pickaxe",
+      "category": "tools",
+      "image": "diamond_pickaxe",
+      "description": "A durable pickaxe that can mine all blocks efficiently. Required to mine obsidian and ancient debris.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 diamonds and 2 sticks"
+        }
+      ],
+      "usedIn": ["mining_obsidian", "mining_ancient_debris"],
+      "relatedItems": ["stick", "diamond", "iron_pickaxe", "netherite_pickaxe"],
+      "recipeIds": ["diamond_pickaxe_craft"]
+    },
+    {
+      "id": "golden_pickaxe",
+      "name": "Golden Pickaxe",
+      "category": "tools",
+      "image": "golden_pickaxe",
+      "description": "A fast but fragile pickaxe made from gold. Mines quickly but has very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 gold ingots and 2 sticks"
+        }
+      ],
+      "usedIn": ["fast_mining", "enchanting"],
+      "relatedItems": ["stick", "gold_ingot", "iron_pickaxe", "diamond_pickaxe"],
+      "recipeIds": ["golden_pickaxe_craft"]
+    },
+    {
+      "id": "netherite_pickaxe",
+      "name": "Netherite Pickaxe",
+      "category": "tools",
+      "image": "netherite_pickaxe",
+      "description": "The ultimate pickaxe with high durability and mining speed. Fire resistant and cannot be destroyed by lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond pickaxe using a netherite ingot"
+        }
+      ],
+      "usedIn": ["mining_ancient_debris", "nether_mining"],
+      "relatedItems": ["diamond_pickaxe", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_pickaxe_upgrade"]
+    },
+    {
+      "id": "wooden_axe",
+      "name": "Wooden Axe",
+      "category": "tools",
+      "image": "wooden_axe",
+      "description": "A basic axe for chopping wood faster than by hand. Can also be used as a weapon.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 wood planks and 2 sticks"
+        }
+      ],
+      "usedIn": ["chopping_wood", "stripping_logs"],
+      "relatedItems": ["stick", "oak_planks", "stone_axe", "wooden_pickaxe"],
+      "recipeIds": ["wooden_axe_craft"]
+    },
+    {
+      "id": "stone_axe",
+      "name": "Stone Axe",
+      "category": "tools",
+      "image": "stone_axe",
+      "description": "An axe made from cobblestone. More efficient than wood for chopping.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 cobblestone and 2 sticks"
+        }
+      ],
+      "usedIn": ["chopping_wood", "combat"],
+      "relatedItems": ["stick", "cobblestone", "wooden_axe", "iron_axe"],
+      "recipeIds": ["stone_axe_craft"]
+    },
+    {
+      "id": "iron_axe",
+      "name": "Iron Axe",
+      "category": "tools",
+      "image": "iron_axe",
+      "description": "A reliable iron axe for efficient wood gathering. Also deals good damage in combat.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 iron ingots and 2 sticks"
+        }
+      ],
+      "usedIn": ["woodcutting", "combat"],
+      "relatedItems": ["stick", "iron_ingot", "stone_axe", "diamond_axe"],
+      "recipeIds": ["iron_axe_craft"]
+    },
+    {
+      "id": "diamond_axe",
+      "name": "Diamond Axe",
+      "category": "tools",
+      "image": "diamond_axe",
+      "description": "A highly efficient diamond axe for fast wood gathering. Excellent as a weapon.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 diamonds and 2 sticks"
+        }
+      ],
+      "usedIn": ["fast_woodcutting", "high_damage_combat"],
+      "relatedItems": ["stick", "diamond", "iron_axe", "netherite_axe"],
+      "recipeIds": ["diamond_axe_craft"]
+    },
+    {
+      "id": "wooden_sword",
+      "name": "Wooden Sword",
+      "category": "weapons",
+      "image": "wooden_sword",
+      "description": "A basic sword made from wood and sticks. Deals minimal damage but better than bare hands.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 wood planks and 1 stick"
+        }
+      ],
+      "usedIn": ["early_game_combat"],
+      "relatedItems": ["stick", "oak_planks", "stone_sword", "wooden_axe"],
+      "recipeIds": ["wooden_sword_craft"]
+    },
+    {
+      "id": "stone_sword",
+      "name": "Stone Sword",
+      "category": "weapons",
+      "image": "stone_sword",
+      "description": "A sword made from cobblestone. Better damage than wood but slower than iron.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 cobblestone and 1 stick"
+        }
+      ],
+      "usedIn": ["early_combat", "mob_fighting"],
+      "relatedItems": ["stick", "cobblestone", "wooden_sword", "iron_sword"],
+      "recipeIds": ["stone_sword_craft"]
+    },
+    {
+      "id": "iron_sword",
+      "name": "Iron Sword",
+      "category": "weapons",
+      "image": "iron_sword",
+      "description": "A reliable iron sword with good damage and durability. Standard weapon for most combat situations.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 iron ingots and 1 stick"
+        }
+      ],
+      "usedIn": ["general_combat", "mob_farming"],
+      "relatedItems": ["stick", "iron_ingot", "stone_sword", "diamond_sword"],
+      "recipeIds": ["iron_sword_craft"]
+    },
+    {
+      "id": "diamond_sword",
+      "name": "Diamond Sword",
+      "category": "weapons",
+      "image": "diamond_sword",
+      "description": "A powerful diamond sword with high damage output. Excellent for PvP and tough mobs.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 diamonds and 1 stick"
+        }
+      ],
+      "usedIn": ["pvp_combat", "boss_fighting"],
+      "relatedItems": ["stick", "diamond", "iron_sword", "netherite_sword"],
+      "recipeIds": ["diamond_sword_craft"]
+    },
+    {
+      "id": "golden_sword",
+      "name": "Golden Sword",
+      "category": "weapons",
+      "image": "golden_sword",
+      "description": "A fast but weak golden sword. Has high enchantability but very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 gold ingots and 1 stick"
+        }
+      ],
+      "usedIn": ["enchanting", "fast_attacks"],
+      "relatedItems": ["stick", "gold_ingot", "iron_sword", "diamond_sword"],
+      "recipeIds": ["golden_sword_craft"]
+    },
+    {
+      "id": "netherite_sword",
+      "name": "Netherite Sword",
+      "category": "weapons",
+      "image": "netherite_sword",
+      "description": "The ultimate sword with highest damage and knockback. Fire resistant and cannot burn in lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond sword using a netherite ingot"
+        }
+      ],
+      "usedIn": ["endgame_combat", "pvp"],
+      "relatedItems": ["diamond_sword", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_sword_upgrade"]
+    },
+    {
+      "id": "bow",
+      "name": "Bow",
+      "category": "weapons",
+      "image": "bow",
+      "description": "A ranged weapon that fires arrows. Requires arrows in inventory to use.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 sticks and 3 strings"
+        }
+      ],
+      "usedIn": ["ranged_combat", "skeleton_farming"],
+      "relatedItems": ["stick", "string", "arrow", "crossbow"],
+      "recipeIds": ["bow_craft"]
+    },
+    {
+      "id": "crossbow",
+      "name": "Crossbow",
+      "category": "weapons",
+      "image": "crossbow",
+      "description": "A powerful ranged weapon that takes longer to load but deals more damage than a bow.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 sticks, 2 strings, 1 iron ingot, and 1 tripwire hook"
+        }
+      ],
+      "usedIn": ["ranged_combat", "piercing_shots"],
+      "relatedItems": ["stick", "string", "iron_ingot", "bow", "arrow"],
+      "recipeIds": ["crossbow_craft"]
+    },
+    {
+      "id": "arrow",
+      "name": "Arrow",
+      "category": "weapons",
+      "image": "arrow",
+      "description": "Ammunition for bows and crossbows. Can be tipped with potions for special effects.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 flint, 1 stick, and 1 feather"
+        },
+        {
+          "method": "looting",
+          "source": "skeletons",
+          "tool": null,
+          "description": "Dropped by skeletons when killed"
+        }
+      ],
+      "usedIn": ["bow_ammunition", "crossbow_ammunition"],
+      "relatedItems": ["flint", "stick", "feather", "bow", "crossbow"],
+      "recipeIds": ["arrow_craft"]
+    },
+    {
+      "id": "trident",
+      "name": "Trident",
+      "category": "weapons",
+      "image": "trident",
+      "description": "A rare thrown weapon that can be used in melee or ranged combat. Can be enchanted with loyalty and channeling.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "drowned",
+          "tool": null,
+          "description": "Rare drop from drowned mobs"
+        }
+      ],
+      "usedIn": ["ranged_melee_hybrid", "lightning_channeling"],
+      "relatedItems": ["prismarine_shard", "drowned_farming"],
+      "recipeIds": []
+    },
+    {
+      "id": "leather_helmet",
+      "name": "Leather Helmet",
+      "category": "armor",
+      "image": "leather_helmet",
+      "description": "Basic head protection made from leather. Provides minimal armor points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 leather"
+        }
+      ],
+      "usedIn": ["head_protection", "early_game_armor"],
+      "relatedItems": ["leather", "leather_chestplate", "chainmail_helmet"],
+      "recipeIds": ["leather_helmet_craft"]
+    },
+    {
+      "id": "leather_chestplate",
+      "name": "Leather Chestplate",
+      "category": "armor",
+      "image": "leather_chestplate",
+      "description": "Basic torso protection made from leather. Provides moderate armor points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 leather"
+        }
+      ],
+      "usedIn": ["torso_protection", "early_game_armor"],
+      "relatedItems": ["leather", "leather_helmet", "chainmail_chestplate"],
+      "recipeIds": ["leather_chestplate_craft"]
+    },
+    {
+      "id": "leather_leggings",
+      "name": "Leather Leggings",
+      "category": "armor",
+      "image": "leather_leggings",
+      "description": "Basic leg protection made from leather. Provides moderate armor points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 leather"
+        }
+      ],
+      "usedIn": ["leg_protection", "early_game_armor"],
+      "relatedItems": ["leather", "leather_chestplate", "chainmail_leggings"],
+      "recipeIds": ["leather_leggings_craft"]
+    },
+    {
+      "id": "leather_boots",
+      "name": "Leather Boots",
+      "category": "armor",
+      "image": "leather_boots",
+      "description": "Basic foot protection made from leather. Provides minimal armor points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 leather"
+        }
+      ],
+      "usedIn": ["foot_protection", "early_game_armor"],
+      "relatedItems": ["leather", "leather_leggings", "chainmail_boots"],
+      "recipeIds": ["leather_boots_craft"]
+    },
+    {
+      "id": "chainmail_helmet",
+      "name": "Chainmail Helmet",
+      "category": "armor",
+      "image": "chainmail_helmet",
+      "description": "Chainmail head protection. Better than leather but cannot be crafted normally.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "trading",
+          "source": "armorer_villager",
+          "tool": null,
+          "description": "Traded from armorer villagers"
+        },
+        {
+          "method": "looting",
+          "source": "mobs",
+          "tool": null,
+          "description": "Rare drop from zombie, skeleton, and husk mobs"
+        }
+      ],
+      "usedIn": ["head_protection", "mid_game_armor"],
+      "relatedItems": ["iron_helmet", "leather_helmet"],
+      "recipeIds": []
+    },
+    {
+      "id": "chainmail_chestplate",
+      "name": "Chainmail Chestplate",
+      "category": "armor",
+      "image": "chainmail_chestplate",
+      "description": "Chainmail torso protection. Better than leather but cannot be crafted normally.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "trading",
+          "source": "armorer_villager",
+          "tool": null,
+          "description": "Traded from armorer villagers"
+        },
+        {
+          "method": "looting",
+          "source": "mobs",
+          "tool": null,
+          "description": "Rare drop from zombie, skeleton, and husk mobs"
+        }
+      ],
+      "usedIn": ["torso_protection", "mid_game_armor"],
+      "relatedItems": ["iron_chestplate", "leather_chestplate"],
+      "recipeIds": []
+    },
+    {
+      "id": "chainmail_leggings",
+      "name": "Chainmail Leggings",
+      "category": "armor",
+      "image": "chainmail_leggings",
+      "description": "Chainmail leg protection. Better than leather but cannot be crafted normally.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "trading",
+          "source": "armorer_villager",
+          "tool": null,
+          "description": "Traded from armorer villagers"
+        },
+        {
+          "method": "looting",
+          "source": "mobs",
+          "tool": null,
+          "description": "Rare drop from zombie, skeleton, and husk mobs"
+        }
+      ],
+      "usedIn": ["leg_protection", "mid_game_armor"],
+      "relatedItems": ["iron_leggings", "leather_leggings"],
+      "recipeIds": []
+    },
+    {
+      "id": "chainmail_boots",
+      "name": "Chainmail Boots",
+      "category": "armor",
+      "image": "chainmail_boots",
+      "description": "Chainmail foot protection. Better than leather but cannot be crafted normally.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "trading",
+          "source": "armorer_villager",
+          "tool": null,
+          "description": "Traded from armorer villagers"
+        },
+        {
+          "method": "looting",
+          "source": "mobs",
+          "tool": null,
+          "description": "Rare drop from zombie, skeleton, and husk mobs"
+        }
+      ],
+      "usedIn": ["foot_protection", "mid_game_armor"],
+      "relatedItems": ["iron_boots", "leather_boots"],
+      "recipeIds": []
+    },
+    {
+      "id": "iron_helmet",
+      "name": "Iron Helmet",
+      "category": "armor",
+      "image": "iron_helmet",
+      "description": "Reliable iron head protection. Standard armor for most gameplay.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 iron ingots"
+        }
+      ],
+      "usedIn": ["head_protection", "general_armor"],
+      "relatedItems": ["iron_ingot", "chainmail_helmet", "diamond_helmet"],
+      "recipeIds": ["iron_helmet_craft"]
+    },
+    {
+      "id": "iron_chestplate",
+      "name": "Iron Chestplate",
+      "category": "armor",
+      "image": "iron_chestplate",
+      "description": "Reliable iron torso protection. Provides good defense for most situations.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 iron ingots"
+        }
+      ],
+      "usedIn": ["torso_protection", "general_armor"],
+      "relatedItems": ["iron_ingot", "chainmail_chestplate", "diamond_chestplate"],
+      "recipeIds": ["iron_chestplate_craft"]
+    },
+    {
+      "id": "iron_leggings",
+      "name": "Iron Leggings",
+      "category": "armor",
+      "image": "iron_leggings",
+      "description": "Reliable iron leg protection. Standard armor for most gameplay.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 iron ingots"
+        }
+      ],
+      "usedIn": ["leg_protection", "general_armor"],
+      "relatedItems": ["iron_ingot", "chainmail_leggings", "diamond_leggings"],
+      "recipeIds": ["iron_leggings_craft"]
+    },
+    {
+      "id": "iron_boots",
+      "name": "Iron Boots",
+      "category": "armor",
+      "image": "iron_boots",
+      "description": "Reliable iron foot protection. Standard armor for most gameplay.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 iron ingots"
+        }
+      ],
+      "usedIn": ["foot_protection", "general_armor"],
+      "relatedItems": ["iron_ingot", "chainmail_boots", "diamond_boots"],
+      "recipeIds": ["iron_boots_craft"]
+    },
+    {
+      "id": "diamond_helmet",
+      "name": "Diamond Helmet",
+      "category": "armor",
+      "image": "diamond_helmet",
+      "description": "High-quality diamond head protection. Excellent defense with good durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 diamonds"
+        }
+      ],
+      "usedIn": ["high_protection", "endgame_armor"],
+      "relatedItems": ["diamond", "iron_helmet", "netherite_helmet"],
+      "recipeIds": ["diamond_helmet_craft"]
+    },
+    {
+      "id": "diamond_chestplate",
+      "name": "Diamond Chestplate",
+      "category": "armor",
+      "image": "diamond_chestplate",
+      "description": "High-quality diamond torso protection. Provides maximum defense for the torso.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 diamonds"
+        }
+      ],
+      "usedIn": ["high_protection", "endgame_armor"],
+      "relatedItems": ["diamond", "iron_chestplate", "netherite_chestplate"],
+      "recipeIds": ["diamond_chestplate_craft"]
+    },
+    {
+      "id": "diamond_leggings",
+      "name": "Diamond Leggings",
+      "category": "armor",
+      "image": "diamond_leggings",
+      "description": "High-quality diamond leg protection. Excellent defense with good durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 diamonds"
+        }
+      ],
+      "usedIn": ["high_protection", "endgame_armor"],
+      "relatedItems": ["diamond", "iron_leggings", "netherite_leggings"],
+      "recipeIds": ["diamond_leggings_craft"]
+    },
+    {
+      "id": "diamond_boots",
+      "name": "Diamond Boots",
+      "category": "armor",
+      "image": "diamond_boots",
+      "description": "High-quality diamond foot protection. Excellent defense with good durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 diamonds"
+        }
+      ],
+      "usedIn": ["high_protection", "endgame_armor"],
+      "relatedItems": ["diamond", "iron_boots", "netherite_boots"],
+      "recipeIds": ["diamond_boots_craft"]
+    },
+    {
+      "id": "golden_helmet",
+      "name": "Golden Helmet",
+      "category": "armor",
+      "image": "golden_helmet",
+      "description": "Golden head protection. High enchantability but very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 gold ingots"
+        }
+      ],
+      "usedIn": ["enchanting", "piglin_trading"],
+      "relatedItems": ["gold_ingot", "iron_helmet", "diamond_helmet"],
+      "recipeIds": ["golden_helmet_craft"]
+    },
+    {
+      "id": "golden_chestplate",
+      "name": "Golden Chestplate",
+      "category": "armor",
+      "image": "golden_chestplate",
+      "description": "Golden torso protection. High enchantability but very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 gold ingots"
+        }
+      ],
+      "usedIn": ["enchanting", "piglin_trading"],
+      "relatedItems": ["gold_ingot", "iron_chestplate", "diamond_chestplate"],
+      "recipeIds": ["golden_chestplate_craft"]
+    },
+    {
+      "id": "golden_leggings",
+      "name": "Golden Leggings",
+      "category": "armor",
+      "image": "golden_leggings",
+      "description": "Golden leg protection. High enchantability but very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 gold ingots"
+        }
+      ],
+      "usedIn": ["enchanting", "piglin_trading"],
+      "relatedItems": ["gold_ingot", "iron_leggings", "diamond_leggings"],
+      "recipeIds": ["golden_leggings_craft"]
+    },
+    {
+      "id": "golden_boots",
+      "name": "Golden Boots",
+      "category": "armor",
+      "image": "golden_boots",
+      "description": "Golden foot protection. High enchantability but very low durability.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 gold ingots"
+        }
+      ],
+      "usedIn": ["enchanting", "piglin_trading"],
+      "relatedItems": ["gold_ingot", "iron_boots", "diamond_boots"],
+      "recipeIds": ["golden_boots_craft"]
+    },
+    {
+      "id": "netherite_helmet",
+      "name": "Netherite Helmet",
+      "category": "armor",
+      "image": "netherite_helmet",
+      "description": "Ultimate head protection with knockback resistance. Fire resistant and cannot burn in lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond helmet using a netherite ingot"
+        }
+      ],
+      "usedIn": ["endgame_armor", "nether_exploration"],
+      "relatedItems": ["diamond_helmet", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_helmet_upgrade"]
+    },
+    {
+      "id": "netherite_chestplate",
+      "name": "Netherite Chestplate",
+      "category": "armor",
+      "image": "netherite_chestplate",
+      "description": "Ultimate torso protection with knockback resistance. Fire resistant and cannot burn in lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond chestplate using a netherite ingot"
+        }
+      ],
+      "usedIn": ["endgame_armor", "nether_exploration"],
+      "relatedItems": ["diamond_chestplate", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_chestplate_upgrade"]
+    },
+    {
+      "id": "netherite_leggings",
+      "name": "Netherite Leggings",
+      "category": "armor",
+      "image": "netherite_leggings",
+      "description": "Ultimate leg protection with knockback resistance. Fire resistant and cannot burn in lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond leggings using a netherite ingot"
+        }
+      ],
+      "usedIn": ["endgame_armor", "nether_exploration"],
+      "relatedItems": ["diamond_leggings", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_leggings_upgrade"]
+    },
+    {
+      "id": "netherite_boots",
+      "name": "Netherite Boots",
+      "category": "armor",
+      "image": "netherite_boots",
+      "description": "Ultimate foot protection with knockback resistance. Fire resistant and cannot burn in lava.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "smithing",
+          "source": null,
+          "tool": "smithing_table",
+          "description": "Upgrade a diamond boots using a netherite ingot"
+        }
+      ],
+      "usedIn": ["endgame_armor", "nether_exploration"],
+      "relatedItems": ["diamond_boots", "netherite_ingot", "smithing_table"],
+      "recipeIds": ["netherite_boots_upgrade"]
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "category": "combat",
+      "image": "shield",
+      "description": "A defensive item that can block attacks and projectiles. Can be decorated with banners.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 wood planks and 1 iron ingot"
+        }
+      ],
+      "usedIn": ["defense", "projectile_blocking"],
+      "relatedItems": ["oak_planks", "iron_ingot", "banner"],
+      "recipeIds": ["shield_craft"]
+    },
+    {
+      "id": "totem_of_undying",
+      "name": "Totem of Undying",
+      "category": "combat",
+      "image": "totem_of_undying",
+      "description": "A rare artifact that saves the holder from death when held in the off-hand. Dropped by evokers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "evoker",
+          "tool": null,
+          "description": "Dropped by evokers in woodland mansions and raids"
+        }
+      ],
+      "usedIn": ["death_prevention", "emergency_healing"],
+      "relatedItems": ["evoker_farming", "woodland_mansion"],
+      "recipeIds": []
+    },
+    {
+      "id": "bread",
+      "name": "Bread",
+      "category": "food",
+      "image": "bread",
+      "description": "A basic food item made from wheat. Restores 5 hunger points when eaten.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 wheat"
+        },
+        {
+          "method": "farming",
+          "source": "wheat_crops",
+          "tool": null,
+          "description": "Grown from wheat seeds"
+        }
+      ],
+      "usedIn": ["food_source", "villager_trading"],
+      "relatedItems": ["wheat", "wheat_seeds", "cookie"],
+      "recipeIds": ["bread_craft"]
+    },
+    {
+      "id": "cooked_beef",
+      "name": "Cooked Beef",
+      "category": "food",
+      "image": "cooked_beef",
+      "description": "Cooked beef steak obtained by smelting raw beef. Restores 8 hunger points.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "smelting",
-          "source": "raw_copper",
+          "source": "raw_beef",
           "tool": "furnace",
-          "description": "Smelt raw copper in a furnace or blast furnace"
+          "description": "Smelt raw beef in a furnace"
+        },
+        {
+          "method": "looting",
+          "source": "cow",
+          "tool": null,
+          "description": "Dropped by cows when killed with fire"
         }
       ],
-      "usedIn": ["lightning_rod", "spyglass", "copper_block"],
-      "relatedItems": ["raw_copper", "copper_ore", "furnace"]
+      "usedIn": ["high_tier_food", "healing"],
+      "relatedItems": ["beef", "furnace", "cooked_porkchop"],
+      "recipeIds": ["cooked_beef_smelt"]
+    },
+    {
+      "id": "cooked_porkchop",
+      "name": "Cooked Porkchop",
+      "category": "food",
+      "image": "cooked_porkchop",
+      "description": "Cooked pork obtained by smelting raw porkchop. Restores 8 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "porkchop",
+          "tool": "furnace",
+          "description": "Smelt raw porkchop in a furnace"
+        },
+        {
+          "method": "looting",
+          "source": "pig",
+          "tool": null,
+          "description": "Dropped by pigs when killed with fire"
+        }
+      ],
+      "usedIn": ["high_tier_food", "healing"],
+      "relatedItems": ["porkchop", "furnace", "cooked_beef"],
+      "recipeIds": ["cooked_porkchop_smelt"]
+    },
+    {
+      "id": "cooked_chicken",
+      "name": "Cooked Chicken",
+      "category": "food",
+      "image": "cooked_chicken",
+      "description": "Cooked chicken obtained by smelting raw chicken. Restores 6 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "chicken",
+          "tool": "furnace",
+          "description": "Smelt raw chicken in a furnace"
+        },
+        {
+          "method": "looting",
+          "source": "chicken",
+          "tool": null,
+          "description": "Dropped by chickens when killed with fire"
+        }
+      ],
+      "usedIn": ["mid_tier_food", "healing"],
+      "relatedItems": ["chicken", "furnace", "cooked_beef"],
+      "recipeIds": ["cooked_chicken_smelt"]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "category": "food",
+      "image": "apple",
+      "description": "A common fruit found by breaking oak leaves. Restores 4 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "foraging",
+          "source": "oak_leaves",
+          "tool": null,
+          "description": "Dropped when breaking oak leaves"
+        },
+        {
+          "method": "looting",
+          "source": "chests",
+          "tool": null,
+          "description": "Found in village and dungeon chests"
+        }
+      ],
+      "usedIn": ["food_source", "golden_apple_crafting"],
+      "relatedItems": ["golden_apple", "oak_leaves"],
+      "recipeIds": []
+    },
+    {
+      "id": "golden_apple",
+      "name": "Golden Apple",
+      "category": "food",
+      "image": "golden_apple",
+      "description": "A rare food item that provides powerful regeneration and absorption effects when consumed.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Surround an apple with 8 gold ingots"
+        },
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon, mineshaft, and stronghold chests"
+        }
+      ],
+      "usedIn": ["healing", "curing_zombie_villager"],
+      "relatedItems": ["apple", "gold_ingot"],
+      "recipeIds": ["golden_apple_craft"]
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "category": "food",
+      "image": "carrot",
+      "description": "A vegetable that can be eaten or planted. Restores 3 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "carrot_crops",
+          "tool": null,
+          "description": "Grown from carrot crops"
+        },
+        {
+          "method": "looting",
+          "source": "zombie",
+          "tool": null,
+          "description": "Rare drop from zombies"
+        }
+      ],
+      "usedIn": ["food_source", "carrot_on_a_stick", "golden_carrot"],
+      "relatedItems": ["carrot_on_a_stick", "golden_carrot", "rabbit_stew"],
+      "recipeIds": []
+    },
+    {
+      "id": "potato",
+      "name": "Potato",
+      "category": "food",
+      "image": "potato",
+      "description": "A vegetable that can be eaten raw, cooked, or planted. Restores 1 hunger point raw.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "potato_crops",
+          "tool": null,
+          "description": "Grown from potato crops"
+        },
+        {
+          "method": "looting",
+          "source": "zombie",
+          "tool": null,
+          "description": "Rare drop from zombies"
+        }
+      ],
+      "usedIn": ["food_source", "baked_potato"],
+      "relatedItems": ["baked_potato", "poisonous_potato"],
+      "recipeIds": []
+    },
+    {
+      "id": "baked_potato",
+      "name": "Baked Potato",
+      "category": "food",
+      "image": "baked_potato",
+      "description": "Cooked potato obtained by smelting raw potato. Restores 5 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "potato",
+          "tool": "furnace",
+          "description": "Smelt potato in a furnace"
+        }
+      ],
+      "usedIn": ["food_source", "healing"],
+      "relatedItems": ["potato", "furnace"],
+      "recipeIds": ["baked_potato_smelt"]
+    },
+    {
+      "id": "cake",
+      "name": "Cake",
+      "category": "food",
+      "image": "cake",
+      "description": "A decorative food item that can be placed and eaten in slices. Each slice restores 2 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 milk buckets, 2 sugar, 1 egg, and 3 wheat"
+        }
+      ],
+      "usedIn": ["food_source", "celebration"],
+      "relatedItems": ["milk_bucket", "sugar", "egg", "wheat"],
+      "recipeIds": ["cake_craft"]
+    },
+    {
+      "id": "pumpkin_pie",
+      "name": "Pumpkin Pie",
+      "category": "food",
+      "image": "pumpkin_pie",
+      "description": "A food item made from pumpkin, sugar, and egg. Restores 8 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 pumpkin, 1 sugar, and 1 egg"
+        }
+      ],
+      "usedIn": ["food_source", "healing"],
+      "relatedItems": ["pumpkin", "sugar", "egg"],
+      "recipeIds": ["pumpkin_pie_craft"]
+    },
+    {
+      "id": "cookie",
+      "name": "Cookie",
+      "category": "food",
+      "image": "cookie",
+      "description": "A small food item made from wheat and cocoa beans. Restores 2 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 wheat and 1 cocoa bean"
+        }
+      ],
+      "usedIn": ["quick_food", "villager_trading"],
+      "relatedItems": ["wheat", "cocoa_beans"],
+      "recipeIds": ["cookie_craft"]
+    },
+    {
+      "id": "melon_slice",
+      "name": "Melon Slice",
+      "category": "food",
+      "image": "melon_slice",
+      "description": "A fruit slice obtained from melon blocks. Restores 2 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "melon_blocks",
+          "tool": null,
+          "description": "Harvested from grown melon blocks"
+        }
+      ],
+      "usedIn": ["food_source", "glistering_melon_slice"],
+      "relatedItems": ["melon_seeds", "glistering_melon_slice"],
+      "recipeIds": []
+    },
+    {
+      "id": "sweet_berries",
+      "name": "Sweet Berries",
+      "category": "food",
+      "image": "sweet_berries",
+      "description": "Berries grown from sweet berry bushes. Restore 2 hunger points but can damage when moving through bushes.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "foraging",
+          "source": "sweet_berry_bush",
+          "tool": null,
+          "description": "Harvested from sweet berry bushes"
+        }
+      ],
+      "usedIn": ["food_source", "fox_breeding"],
+      "relatedItems": ["sweet_berry_bush"],
+      "recipeIds": []
+    },
+    {
+      "id": "glow_berries",
+      "name": "Glow Berries",
+      "category": "food",
+      "image": "glow_berries",
+      "description": "Luminous berries that grow on cave vines. Restore 2 hunger points and provide light when placed.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "foraging",
+          "source": "cave_vines",
+          "tool": null,
+          "description": "Harvested from cave vines in lush caves"
+        }
+      ],
+      "usedIn": ["food_source", "light_source", "fox_breeding"],
+      "relatedItems": ["cave_vines", "sweet_berries"],
+      "recipeIds": []
+    },
+    {
+      "id": "beetroot_soup",
+      "name": "Beetroot Soup",
+      "category": "food",
+      "image": "beetroot_soup",
+      "description": "A food item made from beetroots and a bowl. Restores 6 hunger points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 beetroots and 1 bowl"
+        }
+      ],
+      "usedIn": ["food_source", "healing"],
+      "relatedItems": ["beetroot", "bowl", "mushroom_stew"],
+      "recipeIds": ["beetroot_soup_craft"]
+    },
+    {
+      "id": "mushroom_stew",
+      "name": "Mushroom Stew",
+      "category": "food",
+      "image": "mushroom_stew",
+      "description": "A food item made from red and brown mushrooms with a bowl. Restores 6 hunger points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 red mushroom, 1 brown mushroom, and 1 bowl"
+        }
+      ],
+      "usedIn": ["food_source", "healing"],
+      "relatedItems": ["red_mushroom", "brown_mushroom", "bowl"],
+      "recipeIds": ["mushroom_stew_craft"]
+    },
+    {
+      "id": "rabbit_stew",
+      "name": "Rabbit Stew",
+      "category": "food",
+      "image": "rabbit_stew",
+      "description": "A nutritious stew made from rabbit, vegetables, and a bowl. Restores 10 hunger points.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 cooked rabbit, 1 carrot, 1 baked potato, 1 mushroom, and 1 bowl"
+        }
+      ],
+      "usedIn": ["high_tier_food", "healing"],
+      "relatedItems": ["cooked_rabbit", "carrot", "baked_potato", "bowl"],
+      "recipeIds": ["rabbit_stew_craft"]
+    },
+    {
+      "id": "suspicious_stew",
+      "name": "Suspicious Stew",
+      "category": "food",
+      "image": "suspicious_stew",
+      "description": "A stew that provides status effects when consumed. Effects depend on the flowers used.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 red mushroom, 1 brown mushroom, 1 bowl, and any flower"
+        }
+      ],
+      "usedIn": ["status_effects", "healing"],
+      "relatedItems": ["red_mushroom", "brown_mushroom", "bowl", "flower"],
+      "recipeIds": ["suspicious_stew_craft"]
+    },
+    {
+      "id": "milk_bucket",
+      "name": "Milk Bucket",
+      "category": "food",
+      "image": "milk_bucket",
+      "description": "A bucket filled with milk. Can be consumed to clear all status effects.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Use an empty bucket on a cow, mooshroom, or goat"
+        }
+      ],
+      "usedIn": ["clearing_effects", "cake_crafting"],
+      "relatedItems": ["bucket", "cake"],
+      "recipeIds": []
     },
     {
       "id": "iron_ingot",
       "name": "Iron Ingot",
       "category": "materials",
-      "image": "iron",
-      "description": "Iron ingots are versatile metal ingots used extensively in crafting.",
+      "image": "iron_ingot",
+      "description": "A refined metal ingot obtained by smelting iron ore. Used in many tools, weapons, and armor.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "smelting",
           "source": "raw_iron",
           "tool": "furnace",
-          "description": "Smelt raw iron or iron ore in a furnace"
+          "description": "Smelt raw iron in a furnace"
+        },
+        {
+          "method": "smelting",
+          "source": "iron_ore",
+          "tool": "furnace",
+          "description": "Smelt iron ore in a furnace"
         }
       ],
-      "usedIn": ["iron_pickaxe", "iron_sword", "bucket", "shield"],
-      "relatedItems": ["raw_iron", "iron_ore", "furnace"]
+      "usedIn": ["tools", "weapons", "armor", "utility_items"],
+      "relatedItems": ["raw_iron", "furnace", "iron_nugget"],
+      "recipeIds": ["iron_ingot_smelt"]
     },
     {
       "id": "gold_ingot",
       "name": "Gold Ingot",
       "category": "materials",
-      "image": "gold",
-      "description": "Gold ingots are used to craft various golden items and powered rails.",
+      "image": "gold_ingot",
+      "description": "A refined metal ingot obtained by smelting gold ore. Used in tools, armor, and powered rails.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "smelting",
           "source": "raw_gold",
           "tool": "furnace",
-          "description": "Smelt raw gold or gold ore in a furnace"
+          "description": "Smelt raw gold in a furnace"
+        },
+        {
+          "method": "smelting",
+          "source": "gold_ore",
+          "tool": "furnace",
+          "description": "Smelt gold ore in a furnace"
         }
       ],
-      "usedIn": ["golden_apple", "powered_rail", "clock"],
-      "relatedItems": ["raw_gold", "gold_ore", "furnace"]
+      "usedIn": ["golden_tools", "golden_armor", "powered_rails"],
+      "relatedItems": ["raw_gold", "furnace", "gold_nugget"],
+      "recipeIds": ["gold_ingot_smelt"]
+    },
+    {
+      "id": "cooper_ingot",
+      "name": "Copper Ingot",
+      "category": "materials",
+      "image": "cooper_ingot",
+      "description": "A refined metal ingot obtained by smelting copper ore. Used in lightning rods, spyglasses, and building.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "raw_copper",
+          "tool": "furnace",
+          "description": "Smelt raw copper in a furnace"
+        },
+        {
+          "method": "smelting",
+          "source": "copper_ore",
+          "tool": "furnace",
+          "description": "Smelt copper ore in a furnace"
+        }
+      ],
+      "usedIn": ["lightning_rod", "spyglass", "building_blocks"],
+      "relatedItems": ["raw_copper", "furnace", "copper_block"],
+      "recipeIds": ["cooper_ingot_smelt"]
     },
     {
       "id": "diamond",
       "name": "Diamond",
       "category": "materials",
       "image": "diamond",
-      "description": "Diamonds are rare gems used to craft powerful tools and armor.",
+      "description": "A rare gem found deep underground. Used to craft high-tier tools, weapons, and armor.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "mining",
           "source": "diamond_ore",
           "tool": "iron_pickaxe",
-          "description": "Mine diamond ore with an iron pickaxe or better"
+          "description": "Mine diamond ore with an iron or better pickaxe"
+        },
+        {
+          "method": "looting",
+          "source": "chests",
+          "tool": null,
+          "description": "Found in treasure chests in villages, temples, and mineshafts"
         }
       ],
-      "usedIn": ["diamond_pickaxe", "diamond_sword", "enchanting_table"],
-      "relatedItems": ["diamond_ore", "diamond_pickaxe"]
+      "usedIn": ["diamond_tools", "diamond_armor", "enchanting_table"],
+      "relatedItems": ["diamond_ore", "diamond_pickaxe", "enchanting_table"],
+      "recipeIds": []
     },
     {
       "id": "emerald",
       "name": "Emerald",
       "category": "materials",
       "image": "emerald",
-      "description": "Emeralds are rare gems primarily used for trading with villagers.",
+      "description": "A rare gem used as currency with villagers. Found in mountain biomes and through trading.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "mining",
           "source": "emerald_ore",
           "tool": "iron_pickaxe",
-          "description": "Mine emerald ore with an iron pickaxe or better"
+          "description": "Mine emerald ore with an iron or better pickaxe"
         },
         {
           "method": "trading",
-          "description": "Trade with villagers"
+          "source": "villagers",
+          "tool": null,
+          "description": "Obtained by trading with villagers"
         }
       ],
-      "usedIn": ["trading"],
-      "relatedItems": ["emerald_ore", "villager"]
+      "usedIn": ["villager_trading", "beacon_pyramid"],
+      "relatedItems": ["emerald_ore", "villager", "beacon"],
+      "recipeIds": []
+    },
+    {
+      "id": "netherite_ingot",
+      "name": "Netherite Ingot",
+      "category": "materials",
+      "image": "netherite_ingot",
+      "description": "A rare and powerful material made from netherite scrap and gold. Used to upgrade diamond gear.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 netherite scrap and 4 gold ingots"
+        }
+      ],
+      "usedIn": ["netherite_upgrades", "beacon_pyramid"],
+      "relatedItems": ["netherite_scrap", "gold_ingot", "smithing_table"],
+      "recipeIds": ["netherite_ingot_craft"]
     },
     {
       "id": "coal",
       "name": "Coal",
       "category": "materials",
       "image": "coal",
-      "description": "Coal is a common fuel source and crafting ingredient.",
+      "description": "A common fuel source obtained from coal ore. Used for smelting and crafting torches.",
       "stackSize": 64,
       "howToObtain": [
         {
@@ -107,259 +1489,3412 @@
           "source": "coal_ore",
           "tool": "wooden_pickaxe",
           "description": "Mine coal ore with any pickaxe"
+        },
+        {
+          "method": "looting",
+          "source": "wither_skeleton",
+          "tool": null,
+          "description": "Dropped by wither skeletons"
         }
       ],
-      "usedIn": ["torch", "campfire"],
-      "relatedItems": ["coal_ore", "torch"]
+      "usedIn": ["fuel", "torches", "firework_stars"],
+      "relatedItems": ["coal_ore", "torch", "charcoal"],
+      "recipeIds": []
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "category": "materials",
+      "image": "charcoal",
+      "description": "An alternative to coal made by smelting wood. Functions identically to coal for fuel and torches.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "wood",
+          "tool": "furnace",
+          "description": "Smelt any wood log in a furnace"
+        }
+      ],
+      "usedIn": ["fuel", "torches"],
+      "relatedItems": ["oak_log", "furnace", "coal"],
+      "recipeIds": ["charcoal_smelt"]
     },
     {
       "id": "redstone",
-      "name": "Redstone Dust",
+      "name": "Redstone",
       "category": "materials",
       "image": "redstone",
-      "description": "Redstone dust is used for creating redstone circuits and mechanisms.",
+      "description": "A mineral dust used for creating complex mechanisms and circuits. Mined from redstone ore.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "mining",
           "source": "redstone_ore",
           "tool": "iron_pickaxe",
-          "description": "Mine redstone ore with an iron pickaxe or better"
+          "description": "Mine redstone ore with an iron or better pickaxe"
         }
       ],
-      "usedIn": ["redstone_torch", "piston", "repeater"],
-      "relatedItems": ["redstone_ore", "redstone_torch"]
+      "usedIn": ["redstone_circuits", "mechanisms", "brewing"],
+      "relatedItems": ["redstone_ore", "repeater", "comparator"],
+      "recipeIds": []
     },
     {
       "id": "lapis_lazuli",
       "name": "Lapis Lazuli",
       "category": "materials",
       "image": "lapis_lazuli",
-      "description": "Lapis lazuli is a blue dye and enchanting ingredient.",
+      "description": "A blue mineral used for dyeing and enchanting. Mined from lapis lazuli ore.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "mining",
           "source": "lapis_ore",
           "tool": "stone_pickaxe",
-          "description": "Mine lapis ore with a stone pickaxe or better"
+          "description": "Mine lapis lazuli ore with a stone or better pickaxe"
         }
       ],
-      "usedIn": ["blue_dye", "enchanting"],
-      "relatedItems": ["lapis_ore", "enchanting_table"]
+      "usedIn": ["enchanting", "blue_dye", "decoration"],
+      "relatedItems": ["lapis_ore", "enchanting_table", "blue_dye"],
+      "recipeIds": []
     },
     {
-      "id": "netherite_ingot",
-      "name": "Netherite Ingot",
+      "id": "quartz",
+      "name": "Nether Quartz",
       "category": "materials",
-      "image": "netherite",
-      "description": "Netherite ingots are the most durable material for tools and armor.",
+      "image": "quartz",
+      "description": "A white mineral found in the Nether. Used for redstone components and decorative blocks.",
       "stackSize": 64,
       "howToObtain": [
         {
-          "method": "crafting",
-          "source": "netherite_scrap",
-          "tool": "crafting_table",
-          "description": "Combine 4 netherite scraps with 4 gold ingots"
+          "method": "mining",
+          "source": "nether_quartz_ore",
+          "tool": "wooden_pickaxe",
+          "description": "Mine nether quartz ore with any pickaxe"
         }
       ],
-      "usedIn": ["netherite_pickaxe", "netherite_sword"],
-      "relatedItems": ["netherite_scrap", "ancient_debris"]
+      "usedIn": ["redstone_components", "decorative_blocks"],
+      "relatedItems": ["nether_quartz_ore", "comparator", "daylight_detector"],
+      "recipeIds": []
+    },
+    {
+      "id": "amethyst_shard",
+      "name": "Amethyst Shard",
+      "category": "materials",
+      "image": "amethyst_shard",
+      "description": "A purple crystal shard from amethyst clusters. Used for spyglasses and tinted glass.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "amethyst_cluster",
+          "tool": null,
+          "description": "Break fully grown amethyst clusters"
+        }
+      ],
+      "usedIn": ["spyglass", "tinted_glass", "bundle"],
+      "relatedItems": ["amethyst_cluster", "spyglass", "tinted_glass"],
+      "recipeIds": []
+    },
+    {
+      "id": "raw_iron",
+      "name": "Raw Iron",
+      "category": "materials",
+      "image": "raw_iron",
+      "description": "Unrefined iron obtained from iron ore. Can be smelted into iron ingots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "iron_ore",
+          "tool": "stone_pickaxe",
+          "description": "Mine iron ore with a stone or better pickaxe"
+        }
+      ],
+      "usedIn": ["smelting_iron_ingots"],
+      "relatedItems": ["iron_ore", "iron_ingot", "furnace"],
+      "recipeIds": []
+    },
+    {
+      "id": "raw_copper",
+      "name": "Raw Copper",
+      "category": "materials",
+      "image": "raw_copper",
+      "description": "Unrefined copper obtained from copper ore. Can be smelted into copper ingots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "copper_ore",
+          "tool": "stone_pickaxe",
+          "description": "Mine copper ore with a stone or better pickaxe"
+        }
+      ],
+      "usedIn": ["smelting_copper_ingots"],
+      "relatedItems": ["copper_ore", "cooper_ingot", "furnace"],
+      "recipeIds": []
+    },
+    {
+      "id": "raw_gold",
+      "name": "Raw Gold",
+      "category": "materials",
+      "image": "raw_gold",
+      "description": "Unrefined gold obtained from gold ore. Can be smelted into gold ingots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "gold_ore",
+          "tool": "iron_pickaxe",
+          "description": "Mine gold ore with an iron or better pickaxe"
+        }
+      ],
+      "usedIn": ["smelting_gold_ingots"],
+      "relatedItems": ["gold_ore", "gold_ingot", "furnace"],
+      "recipeIds": []
+    },
+    {
+      "id": "netherite_scrap",
+      "name": "Netherite Scrap",
+      "category": "materials",
+      "image": "netherite_scrap",
+      "description": "A rare material obtained by smelting ancient debris. Used to create netherite ingots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "ancient_debris",
+          "tool": "furnace",
+          "description": "Smelt ancient debris in a furnace"
+        }
+      ],
+      "usedIn": ["netherite_ingot_crafting"],
+      "relatedItems": ["ancient_debris", "netherite_ingot", "furnace"],
+      "recipeIds": ["netherite_scrap_smelt"]
     },
     {
       "id": "stick",
       "name": "Stick",
       "category": "materials",
       "image": "stick",
-      "description": "Sticks are basic crafting components for tools and torches.",
+      "description": "A basic crafting material made from wood planks. Used in many tool and weapon recipes.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "planks",
-          "description": "Craft from 2 wooden planks vertically"
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 wood planks"
         }
       ],
-      "usedIn": ["torch", "wooden_pickaxe", "sword"],
-      "relatedItems": ["planks", "torch"]
+      "usedIn": ["tools", "weapons", "torches", "ladders"],
+      "relatedItems": ["oak_planks", "wooden_pickaxe", "torch"],
+      "recipeIds": ["stick_craft"]
     },
     {
-      "id": "torch",
-      "name": "Torch",
-      "category": "decoration",
-      "image": "torch",
-      "description": "Torches provide light and prevent mob spawning.",
+      "id": "string",
+      "name": "String",
+      "category": "materials",
+      "image": "string",
+      "description": "A thin fiber obtained from spiders and cobwebs. Used for bows, fishing rods, and wool.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "spider",
+          "tool": null,
+          "description": "Dropped by spiders and cave spiders"
+        },
+        {
+          "method": "mining",
+          "source": "cobweb",
+          "tool": "shears",
+          "description": "Break cobwebs with shears"
+        }
+      ],
+      "usedIn": ["bow", "fishing_rod", "wool", "lead"],
+      "relatedItems": ["spider", "bow", "fishing_rod"],
+      "recipeIds": []
+    },
+    {
+      "id": "feather",
+      "name": "Feather",
+      "category": "materials",
+      "image": "feather",
+      "description": "A light item obtained from chickens. Used for arrows and book and quill.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "chicken",
+          "tool": null,
+          "description": "Dropped by chickens"
+        }
+      ],
+      "usedIn": ["arrow", "book_and_quill"],
+      "relatedItems": ["chicken", "arrow", "book"],
+      "recipeIds": []
+    },
+    {
+      "id": "flint",
+      "name": "Flint",
+      "category": "materials",
+      "image": "flint",
+      "description": "A hard mineral obtained by breaking gravel. Used for flint and steel and arrows.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "gravel",
+          "tool": null,
+          "description": "Break gravel blocks (10% chance)"
+        }
+      ],
+      "usedIn": ["flint_and_steel", "arrow"],
+      "relatedItems": ["gravel", "flint_and_steel", "arrow"],
+      "recipeIds": []
+    },
+    {
+      "id": "leather",
+      "name": "Leather",
+      "category": "materials",
+      "image": "leather",
+      "description": "Animal hide obtained from cows, horses, and similar mobs. Used for leather armor and book binding.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "cow",
+          "tool": null,
+          "description": "Dropped by cows, horses, donkeys, and similar mobs"
+        }
+      ],
+      "usedIn": ["leather_armor", "book", "item_frame"],
+      "relatedItems": ["cow", "leather_helmet", "book"],
+      "recipeIds": []
+    },
+    {
+      "id": "rabbit_hide",
+      "name": "Rabbit Hide",
+      "category": "materials",
+      "image": "rabbit_hide",
+      "description": "Hide obtained from rabbits. Used to craft leather and bundles.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "rabbit",
+          "tool": null,
+          "description": "Dropped by rabbits"
+        }
+      ],
+      "usedIn": ["leather_crafting", "bundle"],
+      "relatedItems": ["rabbit", "leather", "bundle"],
+      "recipeIds": []
+    },
+    {
+      "id": "phantom_membrane",
+      "name": "Phantom Membrane",
+      "category": "materials",
+      "image": "phantom_membrane",
+      "description": "A membrane obtained from phantoms. Used to repair elytra and brew slow falling potions.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "phantom",
+          "tool": null,
+          "description": "Dropped by phantoms"
+        }
+      ],
+      "usedIn": ["elytra_repair", "slow_falling_potion"],
+      "relatedItems": ["phantom", "elytra", "potion"],
+      "recipeIds": []
+    },
+    {
+      "id": "blaze_rod",
+      "name": "Blaze Rod",
+      "category": "materials",
+      "image": "blaze_rod",
+      "description": "A rod obtained from blazes in Nether fortresses. Used for brewing stands and ender eyes.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "blaze",
+          "tool": null,
+          "description": "Dropped by blazes in Nether fortresses"
+        }
+      ],
+      "usedIn": ["brewing_stand", "ender_eye", "blaze_powder"],
+      "relatedItems": ["blaze", "brewing_stand", "ender_eye"],
+      "recipeIds": []
+    },
+    {
+      "id": "blaze_powder",
+      "name": "Blaze Powder",
+      "category": "materials",
+      "image": "blaze_powder",
+      "description": "Powder made from blaze rods. Used as brewing fuel and for ender eyes.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "coal",
+          "source": null,
           "tool": "crafting_table",
-          "description": "Combine 1 coal/charcoal with 1 stick"
+          "description": "Craft using 1 blaze rod"
         }
       ],
-      "usedIn": ["lighting"],
-      "relatedItems": ["coal", "stick"]
+      "usedIn": ["brewing_fuel", "ender_eye", "magma_cream"],
+      "relatedItems": ["blaze_rod", "brewing_stand", "ender_eye"],
+      "recipeIds": ["blaze_powder_craft"]
     },
     {
-      "id": "crafting_table",
-      "name": "Crafting Table",
-      "category": "tools",
-      "image": "crafting_table",
-      "description": "A crafting table provides a 3×3 crafting grid for advanced recipes.",
+      "id": "ender_pearl",
+      "name": "Ender Pearl",
+      "category": "materials",
+      "image": "ender_pearl",
+      "description": "A pearl obtained from endermen. Used for teleportation and crafting ender eyes.",
+      "stackSize": 16,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "enderman",
+          "tool": null,
+          "description": "Dropped by endermen"
+        }
+      ],
+      "usedIn": ["teleportation", "ender_eye_crafting"],
+      "relatedItems": ["enderman", "ender_eye"],
+      "recipeIds": []
+    },
+    {
+      "id": "ender_eye",
+      "name": "Eye of Ender",
+      "category": "materials",
+      "image": "ender_eye",
+      "description": "An eye made from ender pearls and blaze powder. Used to locate and activate end portals.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "planks",
-          "description": "Craft from 4 wooden planks in a 2×2 grid"
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 ender pearl and 1 blaze powder"
         }
       ],
-      "usedIn": ["crafting"],
-      "relatedItems": ["planks"]
+      "usedIn": ["locating_stronghold", "activating_end_portal"],
+      "relatedItems": ["ender_pearl", "blaze_powder", "end_portal"],
+      "recipeIds": ["ender_eye_craft"]
     },
     {
-      "id": "furnace",
-      "name": "Furnace",
-      "category": "tools",
-      "image": "furnace",
-      "description": "A furnace is used for smelting ores and cooking food.",
+      "id": "ghast_tear",
+      "name": "Ghast Tear",
+      "category": "materials",
+      "image": "ghast_tear",
+      "description": "A tear obtained from ghasts. Used to brew regeneration potions.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "ghast",
+          "tool": null,
+          "description": "Dropped by ghasts"
+        }
+      ],
+      "usedIn": ["regeneration_potion"],
+      "relatedItems": ["ghast", "potion"],
+      "recipeIds": []
+    },
+    {
+      "id": "gunpowder",
+      "name": "Gunpowder",
+      "category": "materials",
+      "image": "gunpowder",
+      "description": "An explosive powder obtained from creepers and ghasts. Used for TNT, fireworks, and splash potions.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped by creepers"
+        },
+        {
+          "method": "looting",
+          "source": "ghast",
+          "tool": null,
+          "description": "Dropped by ghasts"
+        }
+      ],
+      "usedIn": ["tnt", "fireworks", "splash_potions"],
+      "relatedItems": ["creeper", "tnt", "firework_rocket"],
+      "recipeIds": []
+    },
+    {
+      "id": "magma_cream",
+      "name": "Magma Cream",
+      "category": "materials",
+      "image": "magma_cream",
+      "description": "A slimy cream obtained from magma cubes or crafting. Used for fire resistance potions.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "magma_cube",
+          "tool": null,
+          "description": "Dropped by magma cubes"
+        },
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 slime ball and 1 blaze powder"
+        }
+      ],
+      "usedIn": ["fire_resistance_potion"],
+      "relatedItems": ["magma_cube", "slime_ball", "blaze_powder"],
+      "recipeIds": ["magma_cream_craft"]
+    },
+    {
+      "id": "slime_ball",
+      "name": "Slime Ball",
+      "category": "materials",
+      "image": "slime_ball",
+      "description": "A bouncy ball obtained from slimes. Used for sticky pistons, leads, and magma cream.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "slime",
+          "tool": null,
+          "description": "Dropped by slimes"
+        }
+      ],
+      "usedIn": ["sticky_piston", "lead", "magma_cream"],
+      "relatedItems": ["slime", "sticky_piston", "lead"],
+      "recipeIds": []
+    },
+    {
+      "id": "spider_eye",
+      "name": "Spider Eye",
+      "category": "materials",
+      "image": "spider_eye",
+      "description": "An eye obtained from spiders. Used for poisonous potions and fermented spider eye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "spider",
+          "tool": null,
+          "description": "Dropped by spiders and cave spiders"
+        }
+      ],
+      "usedIn": ["poison_potion", "fermented_spider_eye"],
+      "relatedItems": ["spider", "fermented_spider_eye", "potion"],
+      "recipeIds": []
+    },
+    {
+      "id": "fermented_spider_eye",
+      "name": "Fermented Spider Eye",
+      "category": "materials",
+      "image": "fermented_spider_eye",
+      "description": "A fermented spider eye used to corrupt potion effects. Creates harmful or inverted potions.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "cobblestone",
+          "source": null,
           "tool": "crafting_table",
-          "description": "Craft from 8 cobblestone in a ring shape"
+          "description": "Craft using 1 spider eye, 1 sugar, and 1 brown mushroom"
         }
       ],
-      "usedIn": ["smelting"],
-      "relatedItems": ["cobblestone", "coal"]
+      "usedIn": ["corrupting_potions", "weakness_potion"],
+      "relatedItems": ["spider_eye", "sugar", "brown_mushroom"],
+      "recipeIds": ["fermented_spider_eye_craft"]
     },
     {
-      "id": "chest",
-      "name": "Chest",
-      "category": "tools",
-      "image": "chest",
-      "description": "Chests are storage blocks that can hold items.",
+      "id": "glowstone_dust",
+      "name": "Glowstone Dust",
+      "category": "materials",
+      "image": "glowstone_dust",
+      "description": "Luminous dust obtained from glowstone blocks. Used to enhance potion potency and create light sources.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "glowstone",
+          "tool": null,
+          "description": "Break glowstone blocks in the Nether"
+        }
+      ],
+      "usedIn": ["enhancing_potions", "glowstone_blocks"],
+      "relatedItems": ["glowstone", "potion"],
+      "recipeIds": []
+    },
+    {
+      "id": "sugar",
+      "name": "Sugar",
+      "category": "materials",
+      "image": "sugar",
+      "description": "Sweet crystals obtained from sugar cane. Used for cake, potions, and fermented spider eye.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "planks",
+          "source": null,
           "tool": "crafting_table",
-          "description": "Craft from 8 wooden planks in a ring shape"
+          "description": "Craft using 1 sugar cane"
         }
       ],
-      "usedIn": ["storage"],
-      "relatedItems": ["planks"]
+      "usedIn": ["cake", "potion", "fermented_spider_eye"],
+      "relatedItems": ["sugar_cane", "cake", "potion"],
+      "recipeIds": ["sugar_craft"]
     },
     {
-      "id": "wooden_pickaxe",
-      "name": "Wooden Pickaxe",
-      "category": "tools",
-      "image": "wooden_pickaxe",
-      "description": "A basic pickaxe for mining stone and coal ore.",
-      "stackSize": 1,
-      "howToObtain": [
-        {
-          "method": "crafting",
-          "source": "planks",
-          "tool": "crafting_table",
-          "description": "Craft from 3 planks and 2 sticks"
-        }
-      ],
-      "usedIn": ["mining"],
-      "relatedItems": ["planks", "stick"]
-    },
-    {
-      "id": "stone_pickaxe",
-      "name": "Stone Pickaxe",
-      "category": "tools",
-      "image": "stone_pickaxe",
-      "description": "A stone pickaxe for mining iron ore and other resources.",
-      "stackSize": 1,
-      "howToObtain": [
-        {
-          "method": "crafting",
-          "source": "cobblestone",
-          "tool": "crafting_table",
-          "description": "Craft from 3 cobblestone and 2 sticks"
-        }
-      ],
-      "usedIn": ["mining"],
-      "relatedItems": ["cobblestone", "stick"]
-    },
-    {
-      "id": "iron_pickaxe",
-      "name": "Iron Pickaxe",
-      "category": "tools",
-      "image": "iron_pickaxe",
-      "description": "An iron pickaxe for mining diamond, gold, and redstone ores.",
-      "stackSize": 1,
-      "howToObtain": [
-        {
-          "method": "crafting",
-          "source": "iron_ingot",
-          "tool": "crafting_table",
-          "description": "Craft from 3 iron ingots and 2 sticks"
-        }
-      ],
-      "usedIn": ["mining"],
-      "relatedItems": ["iron_ingot", "stick"]
-    },
-    {
-      "id": "diamond_pickaxe",
-      "name": "Diamond Pickaxe",
-      "category": "tools",
-      "image": "diamond_pickaxe",
-      "description": "A powerful pickaxe capable of mining obsidian and ancient debris.",
-      "stackSize": 1,
-      "howToObtain": [
-        {
-          "method": "crafting",
-          "source": "diamond",
-          "tool": "crafting_table",
-          "description": "Craft from 3 diamonds and 2 sticks"
-        }
-      ],
-      "usedIn": ["mining"],
-      "relatedItems": ["diamond", "stick"]
-    },
-    {
-      "id": "bread",
-      "name": "Bread",
-      "category": "food",
-      "image": "bread",
-      "description": "Bread is a food item that restores hunger points.",
+      "id": "glistering_melon_slice",
+      "name": "Glistering Melon Slice",
+      "category": "materials",
+      "image": "glistering_melon_slice",
+      "description": "A golden melon slice used to brew healing potions. Crafted from melon slice and gold nuggets.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "wheat",
+          "source": null,
           "tool": "crafting_table",
-          "description": "Craft from 3 wheat"
+          "description": "Craft using 1 melon slice and 8 gold nuggets"
         }
       ],
-      "usedIn": ["food"],
-      "relatedItems": ["wheat"]
+      "usedIn": ["healing_potion"],
+      "relatedItems": ["melon_slice", "gold_nugget", "potion"],
+      "recipeIds": ["glistering_melon_slice_craft"]
+    },
+    {
+      "id": "nether_star",
+      "name": "Nether Star",
+      "category": "materials",
+      "image": "nether_star",
+      "description": "A rare star obtained from the wither. Used to craft beacons for powerful area effects.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "wither",
+          "tool": null,
+          "description": "Dropped by the wither boss"
+        }
+      ],
+      "usedIn": ["beacon_crafting"],
+      "relatedItems": ["wither", "beacon"],
+      "recipeIds": []
+    },
+    {
+      "id": "heart_of_the_sea",
+      "name": "Heart of the Sea",
+      "category": "materials",
+      "image": "heart_of_the_sea",
+      "description": "A rare item found in buried treasure chests. Used to craft conduits for underwater breathing.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "buried_treasure",
+          "tool": null,
+          "description": "Found in buried treasure chests"
+        }
+      ],
+      "usedIn": ["conduit_crafting"],
+      "relatedItems": ["buried_treasure", "conduit", "nautilus_shell"],
+      "recipeIds": []
+    },
+    {
+      "id": "nautilus_shell",
+      "name": "Nautilus Shell",
+      "category": "materials",
+      "image": "nautilus_shell",
+      "description": "A shell obtained from drowned mobs or fishing. Used to craft conduits.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "drowned",
+          "tool": null,
+          "description": "Dropped by drowned mobs"
+        },
+        {
+          "method": "fishing",
+          "source": "ocean",
+          "tool": "fishing_rod",
+          "description": "Obtained by fishing"
+        }
+      ],
+      "usedIn": ["conduit_crafting"],
+      "relatedItems": ["drowned", "conduit", "heart_of_the_sea"],
+      "recipeIds": []
+    },
+    {
+      "id": "prismarine_shard",
+      "name": "Prismarine Shard",
+      "category": "materials",
+      "image": "prismarine_shard",
+      "description": "A shard obtained from guardians and elder guardians. Used for prismarine blocks.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "guardian",
+          "tool": null,
+          "description": "Dropped by guardians and elder guardians"
+        }
+      ],
+      "usedIn": ["prismarine_blocks", "sea_lantern"],
+      "relatedItems": ["guardian", "prismarine", "sea_lantern"],
+      "recipeIds": []
+    },
+    {
+      "id": "prismarine_crystals",
+      "name": "Prismarine Crystals",
+      "category": "materials",
+      "image": "prismarine_crystals",
+      "description": "Crystals obtained from guardians. Used for sea lanterns.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "guardian",
+          "tool": null,
+          "description": "Dropped by guardians and elder guardians"
+        }
+      ],
+      "usedIn": ["sea_lantern"],
+      "relatedItems": ["guardian", "sea_lantern", "prismarine_shard"],
+      "recipeIds": []
+    },
+    {
+      "id": "echo_shard",
+      "name": "Echo Shard",
+      "category": "materials",
+      "image": "echo_shard",
+      "description": "A mysterious shard found in ancient cities. Used to craft recovery compasses.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "ancient_city",
+          "tool": null,
+          "description": "Found in chests in ancient cities"
+        }
+      ],
+      "usedIn": ["recovery_compass"],
+      "relatedItems": ["ancient_city", "recovery_compass"],
+      "recipeIds": []
+    },
+    {
+      "id": "sculk_catalyst",
+      "name": "Sculk Catalyst",
+      "category": "materials",
+      "image": "sculk_catalyst",
+      "description": "A block that spreads sculk when mobs die near it. Found in ancient cities.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "ancient_city",
+          "tool": null,
+          "description": "Found in ancient cities"
+        }
+      ],
+      "usedIn": ["sculk_spreading"],
+      "relatedItems": ["ancient_city", "sculk"],
+      "recipeIds": []
     },
     {
       "id": "oak_planks",
       "name": "Oak Planks",
-      "category": "blocks",
+      "category": "building_blocks",
       "image": "oak_planks",
-      "description": "Oak planks are basic building blocks crafted from oak logs.",
+      "description": "Wooden planks made from oak logs. A basic building material used in many recipes.",
       "stackSize": 64,
       "howToObtain": [
         {
           "method": "crafting",
-          "source": "oak_log",
-          "description": "Craft from 1 oak log (yields 4 planks)"
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 oak log (makes 4 planks)"
         }
       ],
-      "usedIn": ["crafting_table", "stick", "chest"],
-      "relatedItems": ["oak_log", "stick"]
+      "usedIn": ["building", "tools", "weapons"],
+      "relatedItems": ["oak_log", "stick", "crafting_table"],
+      "recipeIds": ["oak_planks_craft"]
+    },
+    {
+      "id": "oak_door",
+      "name": "Oak Door",
+      "category": "building_blocks",
+      "image": "oak_door",
+      "description": "A wooden door that can be opened and closed. Provides security and privacy.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 oak planks"
+        }
+      ],
+      "usedIn": ["building_entrances", "security"],
+      "relatedItems": ["oak_planks", "iron_door"],
+      "recipeIds": ["oak_door_craft"]
+    },
+    {
+      "id": "oak_sign",
+      "name": "Oak Sign",
+      "category": "building_blocks",
+      "image": "oak_sign",
+      "description": "A wooden sign that can display text. Useful for labeling and directions.",
+      "stackSize": 16,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 oak planks and 1 stick"
+        }
+      ],
+      "usedIn": ["labeling", "decorations"],
+      "relatedItems": ["oak_planks", "stick"],
+      "recipeIds": ["oak_sign_craft"]
+    },
+    {
+      "id": "oak_hanging_sign",
+      "name": "Oak Hanging Sign",
+      "category": "building_blocks",
+      "image": "oak_hanging_sign",
+      "description": "A decorative sign that hangs from chains. Can display text like regular signs.",
+      "stackSize": 16,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 stripped oak logs and 2 chains"
+        }
+      ],
+      "usedIn": ["decorative_labeling"],
+      "relatedItems": ["stripped_oak_log", "chain", "oak_sign"],
+      "recipeIds": ["oak_hanging_sign_craft"]
+    },
+    {
+      "id": "oak_boat",
+      "name": "Oak Boat",
+      "category": "transportation",
+      "image": "oak_boat",
+      "description": "A boat made from oak planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 oak planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["oak_planks", "oak_chest_boat"],
+      "recipeIds": ["oak_boat_craft"]
+    },
+    {
+      "id": "oak_chest_boat",
+      "name": "Oak Boat with Chest",
+      "category": "transportation",
+      "image": "oak_chest_boat",
+      "description": "A boat with storage chest for transporting items across water.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 oak boat and 1 chest"
+        }
+      ],
+      "usedIn": ["water_transportation_with_storage"],
+      "relatedItems": ["oak_boat", "chest"],
+      "recipeIds": ["oak_chest_boat_craft"]
+    },
+    {
+      "id": "spruce_boat",
+      "name": "Spruce Boat",
+      "category": "transportation",
+      "image": "spruce_boat",
+      "description": "A boat made from spruce planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 spruce planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["spruce_planks", "spruce_chest_boat"],
+      "recipeIds": ["spruce_boat_craft"]
+    },
+    {
+      "id": "birch_boat",
+      "name": "Birch Boat",
+      "category": "transportation",
+      "image": "birch_boat",
+      "description": "A boat made from birch planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 birch planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["birch_planks", "birch_chest_boat"],
+      "recipeIds": ["birch_boat_craft"]
+    },
+    {
+      "id": "jungle_boat",
+      "name": "Jungle Boat",
+      "category": "transportation",
+      "image": "jungle_boat",
+      "description": "A boat made from jungle planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 jungle planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["jungle_planks", "jungle_chest_boat"],
+      "recipeIds": ["jungle_boat_craft"]
+    },
+    {
+      "id": "acacia_boat",
+      "name": "Acacia Boat",
+      "category": "transportation",
+      "image": "acacia_boat",
+      "description": "A boat made from acacia planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 acacia planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["acacia_planks", "acacia_chest_boat"],
+      "recipeIds": ["acacia_boat_craft"]
+    },
+    {
+      "id": "dark_oak_boat",
+      "name": "Dark Oak Boat",
+      "category": "transportation",
+      "image": "dark_oak_boat",
+      "description": "A boat made from dark oak planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 dark oak planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["dark_oak_planks", "dark_oak_chest_boat"],
+      "recipeIds": ["dark_oak_boat_craft"]
+    },
+    {
+      "id": "mangrove_boat",
+      "name": "Mangrove Boat",
+      "category": "transportation",
+      "image": "mangrove_boat",
+      "description": "A boat made from mangrove planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 mangrove planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["mangrove_planks", "mangrove_chest_boat"],
+      "recipeIds": ["mangrove_boat_craft"]
+    },
+    {
+      "id": "cherry_boat",
+      "name": "Cherry Boat",
+      "category": "transportation",
+      "image": "cherry_boat",
+      "description": "A boat made from cherry planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 cherry planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["cherry_planks", "cherry_chest_boat"],
+      "recipeIds": ["cherry_boat_craft"]
+    },
+    {
+      "id": "pale_oak_boat",
+      "name": "Pale Oak Boat",
+      "category": "transportation",
+      "image": "pale_oak_boat",
+      "description": "A boat made from pale oak planks. Used for traveling across water quickly.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 pale oak planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["pale_oak_planks", "pale_oak_chest_boat"],
+      "recipeIds": ["pale_oak_boat_craft"]
+    },
+    {
+      "id": "bamboo_raft",
+      "name": "Bamboo Raft",
+      "category": "transportation",
+      "image": "bamboo_raft",
+      "description": "A raft made from bamboo. Functions like a boat but with different appearance.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 bamboo planks"
+        }
+      ],
+      "usedIn": ["water_travel"],
+      "relatedItems": ["bamboo", "bamboo_chest_raft"],
+      "recipeIds": ["bamboo_raft_craft"]
+    },
+    {
+      "id": "bamboo_chest_raft",
+      "name": "Bamboo Raft with Chest",
+      "category": "transportation",
+      "image": "bamboo_chest_raft",
+      "description": "A bamboo raft with storage chest for transporting items across water.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 bamboo raft and 1 chest"
+        }
+      ],
+      "usedIn": ["water_transportation_with_storage"],
+      "relatedItems": ["bamboo_raft", "chest"],
+      "recipeIds": ["bamboo_chest_raft_craft"]
+    },
+    {
+      "id": "minecart",
+      "name": "Minecart",
+      "category": "transportation",
+      "image": "minecart",
+      "description": "A cart that runs on rails. Used for transportation in mines and automated systems.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 iron ingots"
+        }
+      ],
+      "usedIn": ["rail_transportation"],
+      "relatedItems": ["iron_ingot", "rail", "chest_minecart"],
+      "recipeIds": ["minecart_craft"]
+    },
+    {
+      "id": "chest_minecart",
+      "name": "Minecart with Chest",
+      "category": "transportation",
+      "image": "chest_minecart",
+      "description": "A minecart with storage chest for transporting items on rails.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 minecart and 1 chest"
+        }
+      ],
+      "usedIn": ["item_transportation_on_rails"],
+      "relatedItems": ["minecart", "chest"],
+      "recipeIds": ["chest_minecart_craft"]
+    },
+    {
+      "id": "furnace_minecart",
+      "name": "Minecart with Furnace",
+      "category": "transportation",
+      "image": "furnace_minecart",
+      "description": "A minecart with furnace that can be powered by fuel to move on rails.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 minecart and 1 furnace"
+        }
+      ],
+      "usedIn": ["powered_rail_transportation"],
+      "relatedItems": ["minecart", "furnace"],
+      "recipeIds": ["furnace_minecart_craft"]
+    },
+    {
+      "id": "hopper_minecart",
+      "name": "Minecart with Hopper",
+      "category": "transportation",
+      "image": "hopper_minecart",
+      "description": "A minecart with hopper that can collect and transfer items on rails.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 minecart and 1 hopper"
+        }
+      ],
+      "usedIn": ["automated_item_transportation"],
+      "relatedItems": ["minecart", "hopper"],
+      "recipeIds": ["hopper_minecart_craft"]
+    },
+    {
+      "id": "saddle",
+      "name": "Saddle",
+      "category": "transportation",
+      "image": "saddle",
+      "description": "Equipment for riding horses, striders, and pigs. Cannot be crafted, only found in loot.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon, temple, and fortress chests"
+        },
+        {
+          "method": "fishing",
+          "source": "treasure",
+          "tool": "fishing_rod",
+          "description": "Rare treasure from fishing"
+        }
+      ],
+      "usedIn": ["riding_mounts"],
+      "relatedItems": ["horse", "pig", "strider"],
+      "recipeIds": []
+    },
+    {
+      "id": "carrot_on_a_stick",
+      "name": "Carrot on a Stick",
+      "category": "transportation",
+      "image": "carrot_on_a_stick",
+      "description": "A tool used to control and speed up ridden pigs. Requires a saddle on the pig.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 fishing rod and 1 carrot"
+        }
+      ],
+      "usedIn": ["controlling_pigs"],
+      "relatedItems": ["fishing_rod", "carrot", "saddle"],
+      "recipeIds": ["carrot_on_a_stick_craft"]
+    },
+    {
+      "id": "warped_fungus_on_a_stick",
+      "name": "Warped Fungus on a Stick",
+      "category": "transportation",
+      "image": "warped_fungus_on_a_stick",
+      "description": "A tool used to control and speed up ridden striders in the Nether.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 fishing rod and 1 warped fungus"
+        }
+      ],
+      "usedIn": ["controlling_striders"],
+      "relatedItems": ["fishing_rod", "warped_fungus", "saddle"],
+      "recipeIds": ["warped_fungus_on_a_stick_craft"]
+    },
+    {
+      "id": "elytra",
+      "name": "Elytra",
+      "category": "transportation",
+      "image": "elytra",
+      "description": "Wings that allow gliding through the air. Found in end cities on item frames.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "end_city",
+          "tool": null,
+          "description": "Found in end city ships on item frames"
+        }
+      ],
+      "usedIn": ["flight", "gliding"],
+      "relatedItems": ["end_city", "phantom_membrane", "firework_rocket"],
+      "recipeIds": []
+    },
+    {
+      "id": "red_dye",
+      "name": "Red Dye",
+      "category": "dyes",
+      "image": "red_dye",
+      "description": "A primary dye color obtained from poppies, red tulips, or beetroots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 poppy, red tulip, or beetroot"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["poppy", "red_tulip", "beetroot"],
+      "recipeIds": ["red_dye_craft"]
+    },
+    {
+      "id": "green_dye",
+      "name": "Green Dye",
+      "category": "dyes",
+      "image": "green_dye",
+      "description": "A dye color obtained by smelting cactus.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "cactus",
+          "tool": "furnace",
+          "description": "Smelt cactus in a furnace"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["cactus", "furnace"],
+      "recipeIds": ["green_dye_smelt"]
+    },
+    {
+      "id": "blue_dye",
+      "name": "Blue Dye",
+      "category": "dyes",
+      "image": "blue_dye",
+      "description": "A dye color obtained from lapis lazuli or cornflowers.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 lapis lazuli or cornflower"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["lapis_lazuli", "cornflower"],
+      "recipeIds": ["blue_dye_craft"]
+    },
+    {
+      "id": "white_dye",
+      "name": "White Dye",
+      "category": "dyes",
+      "image": "white_dye",
+      "description": "A dye color obtained from bone meal or lily of the valley.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 bone meal or lily of the valley"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["bone_meal", "lily_of_the_valley"],
+      "recipeIds": ["white_dye_craft"]
+    },
+    {
+      "id": "black_dye",
+      "name": "Black Dye",
+      "category": "dyes",
+      "image": "black_dye",
+      "description": "A dye color obtained from ink sacs or wither roses.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 ink sac or wither rose"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["ink_sac", "wither_rose"],
+      "recipeIds": ["black_dye_craft"]
+    },
+    {
+      "id": "brown_dye",
+      "name": "Brown Dye",
+      "category": "dyes",
+      "image": "brown_dye",
+      "description": "A dye color obtained from cocoa beans.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 cocoa bean"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["cocoa_beans"],
+      "recipeIds": ["brown_dye_craft"]
+    },
+    {
+      "id": "yellow_dye",
+      "name": "Yellow Dye",
+      "category": "dyes",
+      "image": "yellow_dye",
+      "description": "A dye color obtained from dandelions or sunflowers.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 dandelion or sunflower"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["dandelion", "sunflower"],
+      "recipeIds": ["yellow_dye_craft"]
+    },
+    {
+      "id": "orange_dye",
+      "name": "Orange Dye",
+      "category": "dyes",
+      "image": "orange_dye",
+      "description": "A dye color obtained from orange tulips or by combining red and yellow dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 orange tulip or combine red and yellow dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["orange_tulip", "red_dye", "yellow_dye"],
+      "recipeIds": ["orange_dye_craft"]
+    },
+    {
+      "id": "magenta_dye",
+      "name": "Magenta Dye",
+      "category": "dyes",
+      "image": "magenta_dye",
+      "description": "A dye color obtained from allium, lilac, or by combining purple and pink dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 allium or combine purple and pink dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["allium", "purple_dye", "pink_dye"],
+      "recipeIds": ["magenta_dye_craft"]
+    },
+    {
+      "id": "light_blue_dye",
+      "name": "Light Blue Dye",
+      "category": "dyes",
+      "image": "light_blue_dye",
+      "description": "A dye color obtained from blue orchids or by combining blue and white dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 blue orchid or combine blue and white dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["blue_orchid", "blue_dye", "white_dye"],
+      "recipeIds": ["light_blue_dye_craft"]
+    },
+    {
+      "id": "lime_dye",
+      "name": "Lime Dye",
+      "category": "dyes",
+      "image": "lime_dye",
+      "description": "A dye color obtained by combining green and white dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Combine green and white dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["green_dye", "white_dye"],
+      "recipeIds": ["lime_dye_craft"]
+    },
+    {
+      "id": "pink_dye",
+      "name": "Pink Dye",
+      "category": "dyes",
+      "image": "pink_dye",
+      "description": "A dye color obtained from pink tulips, peonies, or by combining red and white dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 pink tulip or combine red and white dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["pink_tulip", "red_dye", "white_dye"],
+      "recipeIds": ["pink_dye_craft"]
+    },
+    {
+      "id": "gray_dye",
+      "name": "Gray Dye",
+      "category": "dyes",
+      "image": "gray_dye",
+      "description": "A dye color obtained by combining black and white dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Combine black and white dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["black_dye", "white_dye"],
+      "recipeIds": ["gray_dye_craft"]
+    },
+    {
+      "id": "light_gray_dye",
+      "name": "Light Gray Dye",
+      "category": "dyes",
+      "image": "light_gray_dye",
+      "description": "A dye color obtained from azure bluet, white tulip, oxeye daisy, or by combining gray and white dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 azure bluet or combine gray and white dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["azure_bluet", "gray_dye", "white_dye"],
+      "recipeIds": ["light_gray_dye_craft"]
+    },
+    {
+      "id": "cyan_dye",
+      "name": "Cyan Dye",
+      "category": "dyes",
+      "image": "cyan_dye",
+      "description": "A dye color obtained by combining blue and green dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Combine blue and green dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["blue_dye", "green_dye"],
+      "recipeIds": ["cyan_dye_craft"]
+    },
+    {
+      "id": "purple_dye",
+      "name": "Purple Dye",
+      "category": "dyes",
+      "image": "purple_dye",
+      "description": "A dye color obtained by combining red and blue dye.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Combine red and blue dye"
+        }
+      ],
+      "usedIn": ["dyeing", "colored_blocks"],
+      "relatedItems": ["red_dye", "blue_dye"],
+      "recipeIds": ["purple_dye_craft"]
+    },
+    {
+      "id": "red_candle",
+      "name": "Red Candle",
+      "category": "dyes",
+      "image": "red_candle",
+      "description": "A decorative light source that can be colored and lit. Provides ambient lighting.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 honeycomb and 1 red dye"
+        }
+      ],
+      "usedIn": ["decoration", "lighting"],
+      "relatedItems": ["honeycomb", "red_dye", "candle"],
+      "recipeIds": ["red_candle_craft"]
+    },
+    {
+      "id": "music_disc_13",
+      "name": "Music Disc 13",
+      "category": "music",
+      "image": "music_disc_13",
+      "description": "A music disc that plays '13' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_cat",
+      "name": "Music Disc Cat",
+      "category": "music",
+      "image": "music_disc_cat",
+      "description": "A music disc that plays 'Cat' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_blocks",
+      "name": "Music Disc Blocks",
+      "category": "music",
+      "image": "music_disc_blocks",
+      "description": "A music disc that plays 'Blocks' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_chirp",
+      "name": "Music Disc Chirp",
+      "category": "music",
+      "image": "music_disc_chirp",
+      "description": "A music disc that plays 'Chirp' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_far",
+      "name": "Music Disc Far",
+      "category": "music",
+      "image": "music_disc_far",
+      "description": "A music disc that plays 'Far' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_mall",
+      "name": "Music Disc Mall",
+      "category": "music",
+      "image": "music_disc_mall",
+      "description": "A music disc that plays 'Mall' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_mellohi",
+      "name": "Music Disc Mellohi",
+      "category": "music",
+      "image": "music_disc_mellohi",
+      "description": "A music disc that plays 'Mellohi' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_stal",
+      "name": "Music Disc Stal",
+      "category": "music",
+      "image": "music_disc_stal",
+      "description": "A music disc that plays 'Stal' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_strad",
+      "name": "Music Disc Strad",
+      "category": "music",
+      "image": "music_disc_strad",
+      "description": "A music disc that plays 'Strad' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_ward",
+      "name": "Music Disc Ward",
+      "category": "music",
+      "image": "music_disc_ward",
+      "description": "A music disc that plays 'Ward' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_11",
+      "name": "Music Disc 11",
+      "category": "music",
+      "image": "music_disc_11",
+      "description": "A rare music disc that plays '11' by C418. Has a creepy, glitchy sound.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests (very rare)"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_wait",
+      "name": "Music Disc Wait",
+      "category": "music",
+      "image": "music_disc_wait",
+      "description": "A music disc that plays 'Wait' by C418. Found in dungeon chests or created by creepers.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon chests"
+        },
+        {
+          "method": "mob_interaction",
+          "source": "creeper",
+          "tool": null,
+          "description": "Dropped when a creeper is killed by a skeleton"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "creeper", "skeleton"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_pigstep",
+      "name": "Music Disc Pigstep",
+      "category": "music",
+      "image": "music_disc_pigstep",
+      "description": "A music disc that plays 'Pigstep' by Lena Raine. Found in bastion remnant chests.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "bastion_remnant",
+          "tool": null,
+          "description": "Found in bastion remnant chests"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "bastion_remnant"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_otherside",
+      "name": "Music Disc Otherside",
+      "category": "music",
+      "image": "music_disc_otherside",
+      "description": "A music disc that plays 'Otherside' by Lena Raine. Found in stronghold and ancient city chests.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "stronghold",
+          "tool": null,
+          "description": "Found in stronghold and ancient city chests"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "stronghold", "ancient_city"],
+      "recipeIds": []
+    },
+    {
+      "id": "music_disc_relic",
+      "name": "Music Disc Relic",
+      "category": "music",
+      "image": "music_disc_relic",
+      "description": "A rare music disc with ancient sounds. Found in trail ruins chests.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "trail_ruins",
+          "tool": null,
+          "description": "Found in trail ruins chests"
+        }
+      ],
+      "usedIn": ["music_playing"],
+      "relatedItems": ["jukebox", "trail_ruins"],
+      "recipeIds": []
+    },
+    {
+      "id": "disc_fragment_5",
+      "name": "Disc Fragment 5",
+      "category": "music",
+      "image": "disc_fragment_5",
+      "description": "A fragment of an ancient music disc. Combine 9 fragments to create Music Disc 5.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "ancient_city",
+          "tool": null,
+          "description": "Found in ancient city chests"
+        }
+      ],
+      "usedIn": ["music_disc_5_crafting"],
+      "relatedItems": ["ancient_city", "music_disc_5"],
+      "recipeIds": []
+    },
+    {
+      "id": "bucket",
+      "name": "Bucket",
+      "category": "utility",
+      "image": "bucket",
+      "description": "An empty container used to carry liquids like water, lava, and milk.",
+      "stackSize": 16,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 iron ingots"
+        }
+      ],
+      "usedIn": ["liquid_transport", "mob_capture"],
+      "relatedItems": ["iron_ingot", "water_bucket", "lava_bucket"],
+      "recipeIds": ["bucket_craft"]
+    },
+    {
+      "id": "water_bucket",
+      "name": "Water Bucket",
+      "category": "utility",
+      "image": "water_bucket",
+      "description": "A bucket filled with water. Can be used to create infinite water sources or extinguish fires.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a water source block"
+        }
+      ],
+      "usedIn": ["infinite_water", "fire_extinguishing", "farming"],
+      "relatedItems": ["bucket", "lava_bucket", "milk_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "lava_bucket",
+      "name": "Lava Bucket",
+      "category": "utility",
+      "image": "lava_bucket",
+      "description": "A bucket filled with lava. Can be used as a long-lasting fuel source or for security.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a lava source block"
+        }
+      ],
+      "usedIn": ["fuel", "security", "cobblestone_generation"],
+      "relatedItems": ["bucket", "water_bucket", "furnace"],
+      "recipeIds": []
+    },
+    {
+      "id": "milk_bucket",
+      "name": "Milk Bucket",
+      "category": "utility",
+      "image": "milk_bucket",
+      "description": "A bucket filled with milk. Can be consumed to clear all status effects.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a cow, mooshroom, or goat"
+        }
+      ],
+      "usedIn": ["clearing_effects", "cake_crafting"],
+      "relatedItems": ["bucket", "cake", "cow"],
+      "recipeIds": []
+    },
+    {
+      "id": "powder_snow_bucket",
+      "name": "Powder Snow Bucket",
+      "category": "utility",
+      "image": "powder_snow_bucket",
+      "description": "A bucket filled with powder snow. Can trap mobs and entities when placed.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a powder snow block"
+        }
+      ],
+      "usedIn": ["mob_trapping", "cooling"],
+      "relatedItems": ["bucket", "powder_snow"],
+      "recipeIds": []
+    },
+    {
+      "id": "axolotl_bucket",
+      "name": "Bucket of Axolotl",
+      "category": "utility",
+      "image": "axolotl_bucket",
+      "description": "A bucket containing an axolotl. Can transport axolotls safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on an axolotl"
+        }
+      ],
+      "usedIn": ["axolotl_transport", "aquatic_mob_capture"],
+      "relatedItems": ["bucket", "axolotl", "tropical_fish_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "tropical_fish_bucket",
+      "name": "Bucket of Tropical Fish",
+      "category": "utility",
+      "image": "tropical_fish_bucket",
+      "description": "A bucket containing a tropical fish. Can transport tropical fish safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a tropical fish"
+        }
+      ],
+      "usedIn": ["fish_transport", "aquatic_mob_capture"],
+      "relatedItems": ["bucket", "tropical_fish", "cod_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "cod_bucket",
+      "name": "Bucket of Cod",
+      "category": "utility",
+      "image": "cod_bucket",
+      "description": "A bucket containing a cod. Can transport cod safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a cod"
+        }
+      ],
+      "usedIn": ["fish_transport", "aquatic_mob_capture"],
+      "relatedItems": ["bucket", "cod", "salmon_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "salmon_bucket",
+      "name": "Bucket of Salmon",
+      "category": "utility",
+      "image": "salmon_bucket",
+      "description": "A bucket containing a salmon. Can transport salmon safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a salmon"
+        }
+      ],
+      "usedIn": ["fish_transport", "aquatic_mob_capture"],
+      "relatedItems": ["bucket", "salmon", "tropical_fish_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "pufferfish_bucket",
+      "name": "Bucket of Pufferfish",
+      "category": "utility",
+      "image": "pufferfish_bucket",
+      "description": "A bucket containing a pufferfish. Can transport pufferfish safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a pufferfish"
+        }
+      ],
+      "usedIn": ["fish_transport", "aquatic_mob_capture"],
+      "relatedItems": ["bucket", "pufferfish", "tropical_fish_bucket"],
+      "recipeIds": []
+    },
+    {
+      "id": "tadpole_bucket",
+      "name": "Bucket of Tadpole",
+      "category": "utility",
+      "image": "tadpole_bucket",
+      "description": "A bucket containing a tadpole. Can transport tadpoles safely.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": null,
+          "description": "Use an empty bucket on a tadpole"
+        }
+      ],
+      "usedIn": ["tadpole_transport", "frog_breeding"],
+      "relatedItems": ["bucket", "tadpole", "frog"],
+      "recipeIds": []
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "category": "utility",
+      "image": "lead",
+      "description": "A rope used to leash and tie up mobs. Can be attached to fences.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 strings and 1 slime ball"
+        }
+      ],
+      "usedIn": ["mob_control", "animal_transport"],
+      "relatedItems": ["string", "slime_ball"],
+      "recipeIds": ["lead_craft"]
+    },
+    {
+      "id": "name_tag",
+      "name": "Name Tag",
+      "category": "utility",
+      "image": "name_tag",
+      "description": "An item used to name mobs. Named mobs won't despawn and can be customized.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "looting",
+          "source": "dungeon_chest",
+          "tool": null,
+          "description": "Found in dungeon, mineshaft, and woodland mansion chests"
+        },
+        {
+          "method": "fishing",
+          "source": "treasure",
+          "tool": "fishing_rod",
+          "description": "Treasure catch from fishing"
+        }
+      ],
+      "usedIn": ["naming_mobs", "mob_preservation"],
+      "relatedItems": ["anvil", "mob_naming"],
+      "recipeIds": []
+    },
+    {
+      "id": "compass",
+      "name": "Compass",
+      "category": "utility",
+      "image": "compass",
+      "description": "A navigation tool that points toward the world spawn point.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 iron ingots and 1 redstone"
+        }
+      ],
+      "usedIn": ["navigation", "spawn_location"],
+      "relatedItems": ["iron_ingot", "redstone", "recovery_compass"],
+      "recipeIds": ["compass_craft"]
+    },
+    {
+      "id": "recovery_compass",
+      "name": "Recovery Compass",
+      "category": "utility",
+      "image": "recovery_compass",
+      "description": "A special compass that points to the location of your last death.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 echo shard and 1 compass"
+        }
+      ],
+      "usedIn": ["death_location_recovery"],
+      "relatedItems": ["echo_shard", "compass"],
+      "recipeIds": ["recovery_compass_craft"]
+    },
+    {
+      "id": "clock",
+      "name": "Clock",
+      "category": "utility",
+      "image": "clock",
+      "description": "A timekeeping device that shows the current in-game time of day.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 gold ingots and 1 redstone"
+        }
+      ],
+      "usedIn": ["time_measurement"],
+      "relatedItems": ["gold_ingot", "redstone"],
+      "recipeIds": ["clock_craft"]
+    },
+    {
+      "id": "spyglass",
+      "name": "Spyglass",
+      "category": "utility",
+      "image": "spyglass",
+      "description": "An optical device that provides zoomed-in view when looking through it.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 copper ingots and 1 amethyst shard"
+        }
+      ],
+      "usedIn": ["long_range_viewing"],
+      "relatedItems": ["cooper_ingot", "amethyst_shard"],
+      "recipeIds": ["spyglass_craft"]
+    },
+    {
+      "id": "fishing_rod",
+      "name": "Fishing Rod",
+      "category": "utility",
+      "image": "fishing_rod",
+      "description": "A tool used for fishing in water. Can also pull entities and items.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 sticks and 2 strings"
+        }
+      ],
+      "usedIn": ["fishing", "item_retrieval"],
+      "relatedItems": ["stick", "string", "carrot_on_a_stick"],
+      "recipeIds": ["fishing_rod_craft"]
+    },
+    {
+      "id": "shears",
+      "name": "Shears",
+      "category": "utility",
+      "image": "shears",
+      "description": "A tool used for shearing sheep, collecting leaves, and breaking cobwebs.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 iron ingots"
+        }
+      ],
+      "usedIn": ["sheep_shearing", "leaf_collection", "cobweb_breaking"],
+      "relatedItems": ["iron_ingot", "wool"],
+      "recipeIds": ["shears_craft"]
+    },
+    {
+      "id": "flint_and_steel",
+      "name": "Flint and Steel",
+      "category": "utility",
+      "image": "flint_and_steel",
+      "description": "A tool used to create fire or ignite TNT and nether portals.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 iron ingot and 1 flint"
+        }
+      ],
+      "usedIn": ["fire_starting", "nether_portal_ignition"],
+      "relatedItems": ["iron_ingot", "flint"],
+      "recipeIds": ["flint_and_steel_craft"]
+    },
+    {
+      "id": "fire_charge",
+      "name": "Fire Charge",
+      "category": "utility",
+      "image": "fire_charge",
+      "description": "A fire-starting projectile that can be launched from dispensers.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 blaze powder, 1 coal/charcoal, and 1 gunpowder"
+        }
+      ],
+      "usedIn": ["fire_starting", "dispenser_ammunition"],
+      "relatedItems": ["blaze_powder", "coal", "gunpowder"],
+      "recipeIds": ["fire_charge_craft"]
+    },
+    {
+      "id": "brush",
+      "name": "Brush",
+      "category": "utility",
+      "image": "brush",
+      "description": "A tool used for brushing suspicious blocks to reveal hidden items.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 feather, 1 copper ingot, and 1 stick"
+        }
+      ],
+      "usedIn": ["archeology", "suspicious_block_excavation"],
+      "relatedItems": ["feather", "cooper_ingot", "stick"],
+      "recipeIds": ["brush_craft"]
+    },
+    {
+      "id": "bundle",
+      "name": "Bundle",
+      "category": "utility",
+      "image": "bundle",
+      "description": "A storage item that can hold multiple stacks of different items in one inventory slot.",
+      "stackSize": 1,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 rabbit hide and 2 strings"
+        }
+      ],
+      "usedIn": ["inventory_management", "item_storage"],
+      "relatedItems": ["rabbit_hide", "string"],
+      "recipeIds": ["bundle_craft"]
+    },
+    {
+      "id": "armor_stand",
+      "name": "Armor Stand",
+      "category": "utility",
+      "image": "armor_stand",
+      "description": "A decorative entity that can display armor, weapons, and other items.",
+      "stackSize": 16,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 sticks and 1 smooth stone slab"
+        }
+      ],
+      "usedIn": ["armor_display", "decoration"],
+      "relatedItems": ["stick", "smooth_stone_slab"],
+      "recipeIds": ["armor_stand_craft"]
+    },
+    {
+      "id": "item_frame",
+      "name": "Item Frame",
+      "category": "utility",
+      "image": "item_frame",
+      "description": "A decorative frame that can display items and blocks on walls.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 sticks and 1 leather"
+        }
+      ],
+      "usedIn": ["item_display", "decoration"],
+      "relatedItems": ["stick", "leather", "glow_item_frame"],
+      "recipeIds": ["item_frame_craft"]
+    },
+    {
+      "id": "glow_item_frame",
+      "name": "Glow Item Frame",
+      "category": "utility",
+      "image": "glow_item_frame",
+      "description": "A glowing version of the item frame that illuminates displayed items.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 item frame and 1 glow ink sac"
+        }
+      ],
+      "usedIn": ["illuminated_item_display"],
+      "relatedItems": ["item_frame", "glow_ink_sac"],
+      "recipeIds": ["glow_item_frame_craft"]
+    },
+    {
+      "id": "wheat_seeds",
+      "name": "Wheat Seeds",
+      "category": "farming",
+      "image": "wheat_seeds",
+      "description": "Seeds obtained from breaking grass. Can be planted to grow wheat.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "foraging",
+          "source": "grass",
+          "tool": null,
+          "description": "Dropped when breaking tall grass"
+        }
+      ],
+      "usedIn": ["wheat_farming", "chicken_feeding"],
+      "relatedItems": ["wheat", "bread"],
+      "recipeIds": []
+    },
+    {
+      "id": "beetroot_seeds",
+      "name": "Beetroot Seeds",
+      "category": "farming",
+      "image": "beetroot_seeds",
+      "description": "Seeds obtained from beetroots. Can be planted to grow beetroots.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Obtained from beetroot crops"
+        }
+      ],
+      "usedIn": ["beetroot_farming"],
+      "relatedItems": ["beetroot", "beetroot_soup"],
+      "recipeIds": []
+    },
+    {
+      "id": "melon_seeds",
+      "name": "Melon Seeds",
+      "category": "farming",
+      "image": "melon_seeds",
+      "description": "Seeds obtained from melon slices. Can be planted to grow melon stems.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 melon slice"
+        }
+      ],
+      "usedIn": ["melon_farming"],
+      "relatedItems": ["melon_slice", "glistering_melon_slice"],
+      "recipeIds": ["melon_seeds_craft"]
+    },
+    {
+      "id": "pumpkin_seeds",
+      "name": "Pumpkin Seeds",
+      "category": "farming",
+      "image": "pumpkin_seeds",
+      "description": "Seeds obtained from pumpkins. Can be planted to grow pumpkin stems.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 pumpkin"
+        }
+      ],
+      "usedIn": ["pumpkin_farming"],
+      "relatedItems": ["pumpkin", "pumpkin_pie"],
+      "recipeIds": ["pumpkin_seeds_craft"]
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "category": "farming",
+      "image": "wheat",
+      "description": "A crop obtained from fully grown wheat plants. Used for bread and animal breeding.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "wheat_crops",
+          "tool": null,
+          "description": "Harvested from fully grown wheat crops"
+        }
+      ],
+      "usedIn": ["bread_crafting", "animal_breeding"],
+      "relatedItems": ["wheat_seeds", "bread", "hay_bale"],
+      "recipeIds": []
+    },
+    {
+      "id": "beetroot",
+      "name": "Beetroot",
+      "category": "farming",
+      "image": "beetroot",
+      "description": "A vegetable obtained from beetroot crops. Can be eaten or used for soup.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "beetroot_crops",
+          "tool": null,
+          "description": "Harvested from fully grown beetroot crops"
+        }
+      ],
+      "usedIn": ["beetroot_soup", "red_dye"],
+      "relatedItems": ["beetroot_seeds", "beetroot_soup"],
+      "recipeIds": []
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "category": "farming",
+      "image": "carrot",
+      "description": "A vegetable that can be eaten or planted. Restores 3 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "carrot_crops",
+          "tool": null,
+          "description": "Harvested from fully grown carrot crops"
+        }
+      ],
+      "usedIn": ["carrot_on_a_stick", "golden_carrot", "rabbit_stew"],
+      "relatedItems": ["carrot_on_a_stick", "golden_carrot"],
+      "recipeIds": []
+    },
+    {
+      "id": "potato",
+      "name": "Potato",
+      "category": "farming",
+      "image": "potato",
+      "description": "A vegetable that can be eaten raw, cooked, or planted. Restores 1 hunger point raw.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "potato_crops",
+          "tool": null,
+          "description": "Harvested from fully grown potato crops"
+        }
+      ],
+      "usedIn": ["baked_potato", "rabbit_stew"],
+      "relatedItems": ["baked_potato", "poisonous_potato"],
+      "recipeIds": []
+    },
+    {
+      "id": "poisonous_potato",
+      "name": "Poisonous Potato",
+      "category": "farming",
+      "image": "poisonous_potato",
+      "description": "A rare poisonous variant of potato. Eating it may cause poison effect.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "potato_crops",
+          "tool": null,
+          "description": "Rare drop from potato crops (2% chance)"
+        }
+      ],
+      "usedIn": ["poison_effect"],
+      "relatedItems": ["potato", "baked_potato"],
+      "recipeIds": []
+    },
+    {
+      "id": "sugar_cane",
+      "name": "Sugar Cane",
+      "category": "farming",
+      "image": "sugar_cane",
+      "description": "A plant that grows near water. Used to make sugar and paper.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "sugar_cane",
+          "tool": null,
+          "description": "Harvested from sugar cane plants"
+        }
+      ],
+      "usedIn": ["sugar", "paper"],
+      "relatedItems": ["sugar", "paper"],
+      "recipeIds": []
+    },
+    {
+      "id": "bamboo",
+      "name": "Bamboo",
+      "category": "farming",
+      "image": "bamboo",
+      "description": "A fast-growing plant found in jungle biomes. Used for scaffolding and fuel.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "bamboo",
+          "tool": null,
+          "description": "Harvested from bamboo plants"
+        }
+      ],
+      "usedIn": ["scaffolding", "fuel", "bamboo_planks"],
+      "relatedItems": ["scaffolding", "bamboo_raft"],
+      "recipeIds": []
+    },
+    {
+      "id": "cocoa_beans",
+      "name": "Cocoa Beans",
+      "category": "farming",
+      "image": "cocoa_beans",
+      "description": "Beans obtained from cocoa pods on jungle trees. Used for brown dye and cookies.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "cocoa_pods",
+          "tool": null,
+          "description": "Harvested from cocoa pods on jungle trees"
+        }
+      ],
+      "usedIn": ["cookie", "brown_dye"],
+      "relatedItems": ["cookie", "brown_dye"],
+      "recipeIds": []
+    },
+    {
+      "id": "kelp",
+      "name": "Kelp",
+      "category": "farming",
+      "image": "kelp",
+      "description": "An underwater plant that grows in oceans. Can be dried for food and fuel.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "ocean",
+          "tool": null,
+          "description": "Harvested from kelp plants in ocean biomes"
+        }
+      ],
+      "usedIn": ["dried_kelp", "kelp_block"],
+      "relatedItems": ["dried_kelp", "kelp_block"],
+      "recipeIds": []
+    },
+    {
+      "id": "dried_kelp",
+      "name": "Dried Kelp",
+      "category": "farming",
+      "image": "dried_kelp",
+      "description": "Dried kelp obtained by smelting kelp. Can be eaten or crafted into blocks.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "kelp",
+          "tool": "furnace",
+          "description": "Smelt kelp in a furnace"
+        }
+      ],
+      "usedIn": ["food", "dried_kelp_block"],
+      "relatedItems": ["kelp", "dried_kelp_block"],
+      "recipeIds": ["dried_kelp_smelt"]
+    },
+    {
+      "id": "nether_wart",
+      "name": "Nether Wart",
+      "category": "farming",
+      "image": "nether_wart",
+      "description": "A fungus found in Nether fortresses. Essential for brewing potions.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "nether_fortress",
+          "tool": null,
+          "description": "Found growing in Nether fortress soul sand gardens"
+        }
+      ],
+      "usedIn": ["brewing", "nether_wart_block"],
+      "relatedItems": ["soul_sand", "brewing_stand"],
+      "recipeIds": []
+    },
+    {
+      "id": "chorus_fruit",
+      "name": "Chorus Fruit",
+      "category": "farming",
+      "image": "chorus_fruit",
+      "description": "A fruit from chorus plants in the End. Eating it teleports the player randomly.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "chorus_plant",
+          "tool": null,
+          "description": "Harvested from chorus plants in the End"
+        }
+      ],
+      "usedIn": ["teleportation", "popped_chorus_fruit"],
+      "relatedItems": ["chorus_plant", "popped_chorus_fruit"],
+      "recipeIds": []
+    },
+    {
+      "id": "popped_chorus_fruit",
+      "name": "Popped Chorus Fruit",
+      "category": "farming",
+      "image": "popped_chorus_fruit",
+      "description": "Chorus fruit popped by smelting. Used to craft purpur blocks.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "smelting",
+          "source": "chorus_fruit",
+          "tool": "furnace",
+          "description": "Smelt chorus fruit in a furnace"
+        }
+      ],
+      "usedIn": ["purpur_blocks"],
+      "relatedItems": ["chorus_fruit", "purpur_block"],
+      "recipeIds": ["popped_chorus_fruit_smelt"]
+    },
+    {
+      "id": "sweet_berries",
+      "name": "Sweet Berries",
+      "category": "farming",
+      "image": "sweet_berries",
+      "description": "Berries grown from sweet berry bushes. Restore 2 hunger points.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "sweet_berry_bush",
+          "tool": null,
+          "description": "Harvested from sweet berry bushes in taiga biomes"
+        }
+      ],
+      "usedIn": ["food", "fox_breeding"],
+      "relatedItems": ["sweet_berry_bush", "fox"],
+      "recipeIds": []
+    },
+    {
+      "id": "glow_berries",
+      "name": "Glow Berries",
+      "category": "farming",
+      "image": "glow_berries",
+      "description": "Luminous berries that grow on cave vines. Restore 2 hunger points and provide light.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "farming",
+          "source": "cave_vines",
+          "tool": null,
+          "description": "Harvested from cave vines in lush caves"
+        }
+      ],
+      "usedIn": ["food", "light_source", "fox_breeding"],
+      "relatedItems": ["cave_vines", "lush_caves"],
+      "recipeIds": []
+    },
+    {
+      "id": "pitcher_pod",
+      "name": "Pitcher Pod",
+      "category": "farming",
+      "image": "pitcher_pod",
+      "description": "A seed obtained from sniffer dinosaurs. Grows into pitcher plants.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "sniffing",
+          "source": "sniffer",
+          "tool": null,
+          "description": "Dug up by sniffer mobs from suspicious sand"
+        }
+      ],
+      "usedIn": ["pitcher_plant_growing"],
+      "relatedItems": ["sniffer", "pitcher_plant"],
+      "recipeIds": []
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "category": "utility",
+      "image": "torch",
+      "description": "A basic light source that prevents mob spawning and melts snow.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 stick and 1 coal/charcoal"
+        }
+      ],
+      "usedIn": ["lighting", "mob_spawn_prevention"],
+      "relatedItems": ["stick", "coal", "soul_torch"],
+      "recipeIds": ["torch_craft"]
+    },
+    {
+      "id": "soul_torch",
+      "name": "Soul Torch",
+      "category": "utility",
+      "image": "soul_torch",
+      "description": "A blue torch made from soul soil/sand. Provides dimmer light than regular torches.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 stick, 1 coal/charcoal, and 1 soul soil/sand"
+        }
+      ],
+      "usedIn": ["dim_lighting", "piglin_repelling"],
+      "relatedItems": ["stick", "coal", "soul_soil"],
+      "recipeIds": ["soul_torch_craft"]
+    },
+    {
+      "id": "lantern",
+      "name": "Lantern",
+      "category": "utility",
+      "image": "lantern",
+      "description": "A decorative light source that can be hung from blocks or placed on surfaces.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 iron nuggets and 1 torch"
+        }
+      ],
+      "usedIn": ["lighting", "decoration"],
+      "relatedItems": ["iron_nugget", "torch", "soul_lantern"],
+      "recipeIds": ["lantern_craft"]
+    },
+    {
+      "id": "soul_lantern",
+      "name": "Soul Lantern",
+      "category": "utility",
+      "image": "soul_lantern",
+      "description": "A blue lantern that provides dimmer light than regular lanterns.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 iron nuggets and 1 soul torch"
+        }
+      ],
+      "usedIn": ["dim_lighting", "piglin_repelling"],
+      "relatedItems": ["iron_nugget", "soul_torch", "lantern"],
+      "recipeIds": ["soul_lantern_craft"]
+    },
+    {
+      "id": "campfire",
+      "name": "Campfire",
+      "category": "utility",
+      "image": "campfire",
+      "description": "A light source that cooks food and provides signal smoke. Can be used for cooking without fuel.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 sticks, 3 logs, and 1 coal/charcoal"
+        }
+      ],
+      "usedIn": ["cooking", "lighting", "signal_smoke"],
+      "relatedItems": ["stick", "oak_log", "coal", "soul_campfire"],
+      "recipeIds": ["campfire_craft"]
+    },
+    {
+      "id": "soul_campfire",
+      "name": "Soul Campfire",
+      "category": "utility",
+      "image": "soul_campfire",
+      "description": "A blue campfire that provides dimmer light and repels piglins.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 sticks, 3 logs, and 1 soul soil/sand"
+        }
+      ],
+      "usedIn": ["cooking", "dim_lighting", "piglin_repelling"],
+      "relatedItems": ["stick", "oak_log", "soul_soil", "campfire"],
+      "recipeIds": ["soul_campfire_craft"]
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone",
+      "category": "redstone",
+      "image": "redstone",
+      "description": "A mineral dust used for creating complex mechanisms and circuits. Mined from redstone ore.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "mining",
+          "source": "redstone_ore",
+          "tool": "iron_pickaxe",
+          "description": "Mine redstone ore with an iron or better pickaxe"
+        }
+      ],
+      "usedIn": ["redstone_circuits", "mechanisms", "brewing"],
+      "relatedItems": ["redstone_ore", "repeater", "comparator"],
+      "recipeIds": []
+    },
+    {
+      "id": "repeater",
+      "name": "Redstone Repeater",
+      "category": "redstone",
+      "image": "repeater",
+      "description": "A redstone component that repeats and delays signals. Essential for complex circuits.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 redstone torches, 1 redstone, and 3 stone"
+        }
+      ],
+      "usedIn": ["signal_repeating", "circuit_timing"],
+      "relatedItems": ["redstone_torch", "redstone", "stone"],
+      "recipeIds": ["repeater_craft"]
+    },
+    {
+      "id": "comparator",
+      "name": "Redstone Comparator",
+      "category": "redstone",
+      "image": "comparator",
+      "description": "A redstone component that compares signal strengths or measures container fullness.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 redstone torches, 3 stone, and 1 nether quartz"
+        }
+      ],
+      "usedIn": ["signal_comparison", "container_measurement"],
+      "relatedItems": ["redstone_torch", "stone", "nether_quartz"],
+      "recipeIds": ["comparator_craft"]
+    },
+    {
+      "id": "observer",
+      "name": "Observer",
+      "category": "redstone",
+      "image": "observer",
+      "description": "A block that detects block updates and emits redstone signals.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 cobblestone, 2 redstone, and 1 nether quartz"
+        }
+      ],
+      "usedIn": ["block_detection", "automation"],
+      "relatedItems": ["cobblestone", "redstone", "nether_quartz"],
+      "recipeIds": ["observer_craft"]
+    },
+    {
+      "id": "piston",
+      "name": "Piston",
+      "category": "redstone",
+      "image": "piston",
+      "description": "A block that pushes other blocks when powered by redstone.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 wood planks, 4 cobblestone, 1 iron ingot, and 1 redstone"
+        }
+      ],
+      "usedIn": ["block_moving", "mechanisms"],
+      "relatedItems": ["oak_planks", "cobblestone", "iron_ingot", "redstone"],
+      "recipeIds": ["piston_craft"]
+    },
+    {
+      "id": "sticky_piston",
+      "name": "Sticky Piston",
+      "category": "redstone",
+      "image": "sticky_piston",
+      "description": "A piston that can pull blocks back when retracted.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 piston and 1 slime ball"
+        }
+      ],
+      "usedIn": ["block_pulling", "advanced_mechanisms"],
+      "relatedItems": ["piston", "slime_ball"],
+      "recipeIds": ["sticky_piston_craft"]
+    },
+    {
+      "id": "hopper",
+      "name": "Hopper",
+      "category": "redstone",
+      "image": "hopper",
+      "description": "A block that collects and transfers items between containers.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 iron ingots and 1 chest"
+        }
+      ],
+      "usedIn": ["item_transfer", "automation"],
+      "relatedItems": ["iron_ingot", "chest", "hopper_minecart"],
+      "recipeIds": ["hopper_craft"]
+    },
+    {
+      "id": "dropper",
+      "name": "Dropper",
+      "category": "redstone",
+      "image": "dropper",
+      "description": "A block that drops items when powered by redstone.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 cobblestone and 1 redstone"
+        }
+      ],
+      "usedIn": ["item_dispensing", "automation"],
+      "relatedItems": ["cobblestone", "redstone", "dispenser"],
+      "recipeIds": ["dropper_craft"]
+    },
+    {
+      "id": "dispenser",
+      "name": "Dispenser",
+      "category": "redstone",
+      "image": "dispenser",
+      "description": "A block that shoots items or places blocks when powered by redstone.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 7 cobblestone, 1 bow, and 1 redstone"
+        }
+      ],
+      "usedIn": ["item_shooting", "block_placing", "automation"],
+      "relatedItems": ["cobblestone", "bow", "redstone"],
+      "recipeIds": ["dispenser_craft"]
+    },
+    {
+      "id": "note_block",
+      "name": "Note Block",
+      "category": "redstone",
+      "image": "note_block",
+      "description": "A block that plays musical notes when powered by redstone.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 8 wood planks and 1 redstone"
+        }
+      ],
+      "usedIn": ["music_playing", "redstone_entertainment"],
+      "relatedItems": ["oak_planks", "redstone"],
+      "recipeIds": ["note_block_craft"]
+    },
+    {
+      "id": "redstone_lamp",
+      "name": "Redstone Lamp",
+      "category": "redstone",
+      "image": "redstone_lamp",
+      "description": "A light source that turns on when powered by redstone.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 redstone and 1 glowstone"
+        }
+      ],
+      "usedIn": ["controllable_lighting"],
+      "relatedItems": ["redstone", "glowstone"],
+      "recipeIds": ["redstone_lamp_craft"]
+    },
+    {
+      "id": "tnt",
+      "name": "TNT",
+      "category": "redstone",
+      "image": "tnt",
+      "description": "An explosive block that can be activated by redstone or fire.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 5 gunpowder and 4 sand"
+        }
+      ],
+      "usedIn": ["explosions", "mining", "traps"],
+      "relatedItems": ["gunpowder", "sand"],
+      "recipeIds": ["tnt_craft"]
+    },
+    {
+      "id": "daylight_detector",
+      "name": "Daylight Detector",
+      "category": "redstone",
+      "image": "daylight_detector",
+      "description": "A block that emits redstone signal based on daylight level.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 glass, 3 nether quartz, and 3 wood slabs"
+        }
+      ],
+      "usedIn": ["daylight_detection", "time_based_circuits"],
+      "relatedItems": ["glass", "nether_quartz", "oak_slab"],
+      "recipeIds": ["daylight_detector_craft"]
+    },
+    {
+      "id": "tripwire_hook",
+      "name": "Tripwire Hook",
+      "category": "redstone",
+      "image": "tripwire_hook",
+      "description": "A component used with string to create tripwire traps.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 iron ingot, 1 stick, and 1 wood plank"
+        }
+      ],
+      "usedIn": ["tripwire_traps", "security_systems"],
+      "relatedItems": ["iron_ingot", "stick", "oak_planks"],
+      "recipeIds": ["tripwire_hook_craft"]
+    },
+    {
+      "id": "trapped_chest",
+      "name": "Trapped Chest",
+      "category": "redstone",
+      "image": "trapped_chest",
+      "description": "A chest that emits redstone signal when opened.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 chest and 1 tripwire hook"
+        }
+      ],
+      "usedIn": ["container_monitoring", "security_systems"],
+      "relatedItems": ["chest", "tripwire_hook"],
+      "recipeIds": ["trapped_chest_craft"]
+    },
+    {
+      "id": "lever",
+      "name": "Lever",
+      "category": "redstone",
+      "image": "lever",
+      "description": "A simple switch that can be toggled on and off to control redstone circuits.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 stick and 1 cobblestone"
+        }
+      ],
+      "usedIn": ["circuit_switching"],
+      "relatedItems": ["stick", "cobblestone"],
+      "recipeIds": ["lever_craft"]
+    },
+    {
+      "id": "stone_button",
+      "name": "Stone Button",
+      "category": "redstone",
+      "image": "stone_button",
+      "description": "A button that provides temporary redstone signal when pressed.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 stone"
+        }
+      ],
+      "usedIn": ["temporary_signals", "door_controls"],
+      "relatedItems": ["stone", "wooden_button"],
+      "recipeIds": ["stone_button_craft"]
+    },
+    {
+      "id": "wooden_button",
+      "name": "Wooden Button",
+      "category": "redstone",
+      "image": "wooden_button",
+      "description": "A wooden button that provides temporary redstone signal when pressed.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 wood plank"
+        }
+      ],
+      "usedIn": ["temporary_signals", "door_controls"],
+      "relatedItems": ["oak_planks", "stone_button"],
+      "recipeIds": ["wooden_button_craft"]
+    },
+    {
+      "id": "stone_pressure_plate",
+      "name": "Stone Pressure Plate",
+      "category": "redstone",
+      "image": "stone_pressure_plate",
+      "description": "A pressure plate that emits redstone signal when entities step on it.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 stone"
+        }
+      ],
+      "usedIn": ["entity_detection", "automatic_doors"],
+      "relatedItems": ["stone", "wooden_pressure_plate"],
+      "recipeIds": ["stone_pressure_plate_craft"]
+    },
+    {
+      "id": "wooden_pressure_plate",
+      "name": "Wooden Pressure Plate",
+      "category": "redstone",
+      "image": "wooden_pressure_plate",
+      "description": "A wooden pressure plate that emits redstone signal when entities step on it.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 wood planks"
+        }
+      ],
+      "usedIn": ["entity_detection", "automatic_doors"],
+      "relatedItems": ["oak_planks", "stone_pressure_plate"],
+      "recipeIds": ["wooden_pressure_plate_craft"]
+    },
+    {
+      "id": "light_weighted_pressure_plate",
+      "name": "Light Weighted Pressure Plate",
+      "category": "redstone",
+      "image": "light_weighted_pressure_plate",
+      "description": "A pressure plate that emits signal strength based on number of entities on it.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 gold ingots"
+        }
+      ],
+      "usedIn": ["entity_counting", "advanced_circuits"],
+      "relatedItems": ["gold_ingot", "heavy_weighted_pressure_plate"],
+      "recipeIds": ["light_weighted_pressure_plate_craft"]
+    },
+    {
+      "id": "heavy_weighted_pressure_plate",
+      "name": "Heavy Weighted Pressure Plate",
+      "category": "redstone",
+      "image": "heavy_weighted_pressure_plate",
+      "description": "A pressure plate that emits signal strength based on number of entities on it.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 2 iron ingots"
+        }
+      ],
+      "usedIn": ["entity_counting", "advanced_circuits"],
+      "relatedItems": ["iron_ingot", "light_weighted_pressure_plate"],
+      "recipeIds": ["heavy_weighted_pressure_plate_craft"]
+    },
+    {
+      "id": "target",
+      "name": "Target Block",
+      "category": "redstone",
+      "image": "target",
+      "description": "A block that emits redstone signal when hit by projectiles.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 4 redstone and 1 hay bale"
+        }
+      ],
+      "usedIn": ["projectile_detection", "ranged_circuits"],
+      "relatedItems": ["redstone", "hay_bale"],
+      "recipeIds": ["target_craft"]
+    },
+    {
+      "id": "bee_nest",
+      "name": "Bee Nest",
+      "category": "redstone",
+      "image": "bee_nest",
+      "description": "A natural block that houses bees and emits redstone signal when bees leave/enter.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "natural_generation",
+          "source": "trees",
+          "tool": null,
+          "description": "Naturally generated on trees in flower forests and plains"
+        }
+      ],
+      "usedIn": ["bee_detection", "honey_farming"],
+      "relatedItems": ["bee", "honeycomb", "beehive"],
+      "recipeIds": []
+    },
+    {
+      "id": "beehive",
+      "name": "Beehive",
+      "category": "redstone",
+      "image": "beehive",
+      "description": "A crafted version of bee nest that can be moved and emits redstone signal.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 6 wood planks and 3 honeycombs"
+        }
+      ],
+      "usedIn": ["bee_detection", "honey_farming"],
+      "relatedItems": ["oak_planks", "honeycomb", "bee_nest"],
+      "recipeIds": ["beehive_craft"]
+    },
+    {
+      "id": "sculk_sensor",
+      "name": "Sculk Sensor",
+      "category": "redstone",
+      "image": "sculk_sensor",
+      "description": "A block that detects vibrations and emits redstone signal.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "natural_generation",
+          "source": "ancient_city",
+          "tool": null,
+          "description": "Found in ancient cities in the Deep Dark"
+        }
+      ],
+      "usedIn": ["vibration_detection", "wireless_redstone"],
+      "relatedItems": ["ancient_city", "deep_dark", "sculk_catalyst"],
+      "recipeIds": []
+    },
+    {
+      "id": "calibrated_sculk_sensor",
+      "name": "Calibrated Sculk Sensor",
+      "category": "redstone",
+      "image": "calibrated_sculk_sensor",
+      "description": "An advanced sculk sensor that can filter specific vibrations.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 1 sculk sensor and 3 amethyst shards"
+        }
+      ],
+      "usedIn": ["selective_vibration_detection"],
+      "relatedItems": ["sculk_sensor", "amethyst_shard"],
+      "recipeIds": ["calibrated_sculk_sensor_craft"]
+    },
+    {
+      "id": "lightning_rod",
+      "name": "Lightning Rod",
+      "category": "redstone",
+      "image": "lightning_rod",
+      "description": "A block that attracts lightning strikes and emits redstone signal when struck.",
+      "stackSize": 64,
+      "howToObtain": [
+        {
+          "method": "crafting",
+          "source": null,
+          "tool": "crafting_table",
+          "description": "Craft using 3 copper ingots"
+        }
+      ],
+      "usedIn": ["lightning_protection", "storm_detection"],
+      "relatedItems": ["cooper_ingot"],
+      "recipeIds": ["lightning_rod_craft"]
     }
   ]
 }

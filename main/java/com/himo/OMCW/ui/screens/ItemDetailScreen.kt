@@ -34,10 +34,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.himo.OMCW.data.model.Item
 
+import com.himo.OMCW.data.model.CraftingRecipe
+import com.himo.OMCW.ui.components.CraftingRecipeDisplay
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ItemDetailScreen(
     item: Item?,
+    recipes: List<CraftingRecipe>,
     onBackClick: () -> Unit,
     onRelatedItemClick: (String) -> Unit
 ) {
@@ -141,6 +145,24 @@ fun ItemDetailScreen(
             }
 
             Spacer(modifier = Modifier.height(24.dp))
+
+            // Crafting Recipes
+            if (recipes.isNotEmpty()) {
+                Text(
+                    text = "Crafting Recipes",
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+
+                recipes.forEach { recipe ->
+                    CraftingRecipeDisplay(
+                        recipe = recipe
+                    )
+                    Spacer(modifier = Modifier.height(16.dp))
+                }
+            }
+
 
             // How to Obtain
             if (item.howToObtain.isNotEmpty()) {

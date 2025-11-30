@@ -4,6 +4,7 @@ import android.content.Context
 import com.google.gson.Gson
 import com.himo.OMCW.data.model.CategoriesData
 import com.himo.OMCW.data.model.ItemsData
+import com.himo.OMCW.data.model.RecipesData
 import java.io.InputStreamReader
 
 class LocalDataSource(private val context: Context) {
@@ -30,6 +31,18 @@ class LocalDataSource(private val context: Context) {
             gson.fromJson(reader, CategoriesData::class.java)
         } catch (e: Exception) {
             CategoriesData(emptyList())
+        }
+    }
+
+    fun loadRecipes(): RecipesData {
+        return try {
+            val inputStream = context.resources.openRawResource(
+                context.resources.getIdentifier("recipes", "raw", context.packageName)
+            )
+            val reader = InputStreamReader(inputStream)
+            gson.fromJson(reader, RecipesData::class.java)
+        } catch (e: Exception) {
+            RecipesData(emptyList())
         }
     }
 }

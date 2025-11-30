@@ -1,4 +1,5 @@
 package com.himo.OMCW.ui.navigation
+
 import android.annotation.SuppressLint
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -12,6 +13,7 @@ import com.himo.OMCW.ui.screens.ItemDetailScreen
 import com.himo.OMCW.ui.screens.SettingsScreen
 import com.himo.OMCW.viewmodel.HomeViewModel
 import com.himo.OMCW.viewmodel.SettingsViewModel
+
 sealed class Screen(val route: String) {
     object Home : Screen("home")
     object Settings : Screen("settings")
@@ -19,6 +21,7 @@ sealed class Screen(val route: String) {
         fun createRoute(itemId: String) = "item/$itemId"
     }
 }
+
 @SuppressLint("ViewModelConstructorInComposable")
 @Composable
 fun NavGraph(
@@ -27,6 +30,7 @@ fun NavGraph(
     settingsViewModel: SettingsViewModel
 ){
     val homeViewModel = HomeViewModel(repository)
+
     NavHost(
         navController = navController,
         startDestination = Screen.Home.route
@@ -42,12 +46,13 @@ fun NavGraph(
                 }
             )
         }
+
         composable(Screen.Settings.route) {
             SettingsScreen(
-                settingsViewModel = settingsViewModel,
-                onBackClick = { navController.navigateUp() }
+                viewModel = settingsViewModel
             )
         }
+
         composable(
             route = Screen.ItemDetail.route,
             arguments = listOf(
@@ -56,8 +61,11 @@ fun NavGraph(
         ) { backStackEntry ->
             val itemId = backStackEntry.arguments?.getString("itemId")
             val item = itemId?.let { repository.getItemById(it) }
+            val recipes = itemId?.let { repository.getRecipesForItem(it) } ?: emptyList()
+
             ItemDetailScreen(
                 item = item,
+                recipes = recipes,
                 onBackClick = { navController.navigateUp() },
                 onRelatedItemClick = { relatedId ->
                     navController.navigate(Screen.ItemDetail.createRoute(relatedId))

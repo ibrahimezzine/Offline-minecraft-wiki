@@ -1,0 +1,1395 @@
+{
+  "recipes": [
+    {
+      "id": "wooden_pickaxe_craft",
+      "result": "wooden_pickaxe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "oak_planks", "oak_planks"],
+        [null, "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "stone_pickaxe_craft",
+      "result": "stone_pickaxe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["cobblestone", "cobblestone", "cobblestone"],
+        [null, "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "iron_pickaxe_craft",
+      "result": "iron_pickaxe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", "iron_ingot", "iron_ingot"],
+        [null, "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "diamond_pickaxe_craft",
+      "result": "diamond_pickaxe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond", "diamond", "diamond"],
+        [null, "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "golden_pickaxe_craft",
+      "result": "golden_pickaxe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_ingot", "gold_ingot", "gold_ingot"],
+        [null, "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "netherite_pickaxe_upgrade",
+      "result": "netherite_pickaxe",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_pickaxe"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "wooden_axe_craft",
+      "result": "wooden_axe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "oak_planks", null],
+        ["oak_planks", "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "stone_axe_craft",
+      "result": "stone_axe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["cobblestone", "cobblestone", null],
+        ["cobblestone", "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "iron_axe_craft",
+      "result": "iron_axe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", "iron_ingot", null],
+        ["iron_ingot", "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "diamond_axe_craft",
+      "result": "diamond_axe",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond", "diamond", null],
+        ["diamond", "stick", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "wooden_sword_craft",
+      "result": "wooden_sword",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "oak_planks", null],
+        [null, "oak_planks", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "stone_sword_craft",
+      "result": "stone_sword",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "cobblestone", null],
+        [null, "cobblestone", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "iron_sword_craft",
+      "result": "iron_sword",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "iron_ingot", null],
+        [null, "iron_ingot", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "diamond_sword_craft",
+      "result": "diamond_sword",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "diamond", null],
+        [null, "diamond", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "golden_sword_craft",
+      "result": "golden_sword",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "gold_ingot", null],
+        [null, "gold_ingot", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "netherite_sword_upgrade",
+      "result": "netherite_sword",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_sword"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "bow_craft",
+      "result": "bow",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "stick", "string"],
+        ["stick", null, "string"],
+        [null, "stick", "string"]
+      ]
+    },
+    {
+      "id": "arrow_craft",
+      "result": "arrow",
+      "resultCount": 4,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "flint", null],
+        [null, "stick", null],
+        [null, "feather", null]
+      ]
+    },
+    {
+      "id": "leather_helmet_craft",
+      "result": "leather_helmet",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["leather", "leather", "leather"],
+        ["leather", null, "leather"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "leather_chestplate_craft",
+      "result": "leather_chestplate",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["leather", null, "leather"],
+        ["leather", "leather", "leather"],
+        ["leather", "leather", "leather"]
+      ]
+    },
+    {
+      "id": "leather_leggings_craft",
+      "result": "leather_leggings",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["leather", "leather", "leather"],
+        ["leather", null, "leather"],
+        ["leather", null, "leather"]
+      ]
+    },
+    {
+      "id": "leather_boots_craft",
+      "result": "leather_boots",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["leather", null, "leather"],
+        ["leather", null, "leather"]
+      ]
+    },
+    {
+      "id": "iron_helmet_craft",
+      "result": "iron_helmet",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", "iron_ingot", "iron_ingot"],
+        ["iron_ingot", null, "iron_ingot"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "iron_chestplate_craft",
+      "result": "iron_chestplate",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", null, "iron_ingot"],
+        ["iron_ingot", "iron_ingot", "iron_ingot"],
+        ["iron_ingot", "iron_ingot", "iron_ingot"]
+      ]
+    },
+    {
+      "id": "iron_leggings_craft",
+      "result": "iron_leggings",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", "iron_ingot", "iron_ingot"],
+        ["iron_ingot", null, "iron_ingot"],
+        ["iron_ingot", null, "iron_ingot"]
+      ]
+    },
+    {
+      "id": "iron_boots_craft",
+      "result": "iron_boots",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["iron_ingot", null, "iron_ingot"],
+        ["iron_ingot", null, "iron_ingot"]
+      ]
+    },
+    {
+      "id": "diamond_helmet_craft",
+      "result": "diamond_helmet",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond", "diamond", "diamond"],
+        ["diamond", null, "diamond"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "diamond_chestplate_craft",
+      "result": "diamond_chestplate",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond", null, "diamond"],
+        ["diamond", "diamond", "diamond"],
+        ["diamond", "diamond", "diamond"]
+      ]
+    },
+    {
+      "id": "diamond_leggings_craft",
+      "result": "diamond_leggings",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond", "diamond", "diamond"],
+        ["diamond", null, "diamond"],
+        ["diamond", null, "diamond"]
+      ]
+    },
+    {
+      "id": "diamond_boots_craft",
+      "result": "diamond_boots",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["diamond", null, "diamond"],
+        ["diamond", null, "diamond"]
+      ]
+    },
+    {
+      "id": "golden_helmet_craft",
+      "result": "golden_helmet",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_ingot", "gold_ingot", "gold_ingot"],
+        ["gold_ingot", null, "gold_ingot"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "golden_chestplate_craft",
+      "result": "golden_chestplate",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_ingot", null, "gold_ingot"],
+        ["gold_ingot", "gold_ingot", "gold_ingot"],
+        ["gold_ingot", "gold_ingot", "gold_ingot"]
+      ]
+    },
+    {
+      "id": "golden_leggings_craft",
+      "result": "golden_leggings",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_ingot", "gold_ingot", "gold_ingot"],
+        ["gold_ingot", null, "gold_ingot"],
+        ["gold_ingot", null, "gold_ingot"]
+      ]
+    },
+    {
+      "id": "golden_boots_craft",
+      "result": "golden_boots",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["gold_ingot", null, "gold_ingot"],
+        ["gold_ingot", null, "gold_ingot"]
+      ]
+    },
+    {
+      "id": "netherite_helmet_upgrade",
+      "result": "netherite_helmet",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_helmet"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "netherite_chestplate_upgrade",
+      "result": "netherite_chestplate",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_chestplate"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "netherite_leggings_upgrade",
+      "result": "netherite_leggings",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_leggings"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "netherite_boots_upgrade",
+      "result": "netherite_boots",
+      "resultCount": 1,
+      "type": "SMITHING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["diamond_boots"],
+        ["netherite_ingot"],
+        [null]
+      ]
+    },
+    {
+      "id": "shield_craft",
+      "result": "shield",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "iron_ingot", "oak_planks"],
+        ["oak_planks", "oak_planks", "oak_planks"],
+        [null, "oak_planks", null]
+      ]
+    },
+    {
+      "id": "bread_craft",
+      "result": "bread",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["wheat", "wheat", "wheat"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "cooked_beef_smelt",
+      "result": "cooked_beef",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.35,
+      "pattern": [
+        ["beef"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "cooked_porkchop_smelt",
+      "result": "cooked_porkchop",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.35,
+      "pattern": [
+        ["porkchop"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "cooked_chicken_smelt",
+      "result": "cooked_chicken",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.35,
+      "pattern": [
+        ["chicken"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "golden_apple_craft",
+      "result": "golden_apple",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_ingot", "gold_ingot", "gold_ingot"],
+        ["gold_ingot", "apple", "gold_ingot"],
+        ["gold_ingot", "gold_ingot", "gold_ingot"]
+      ]
+    },
+    {
+      "id": "baked_potato_smelt",
+      "result": "baked_potato",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.35,
+      "pattern": [
+        ["potato"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "cake_craft",
+      "result": "cake",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["milk_bucket", "milk_bucket", "milk_bucket"],
+        ["sugar", "egg", "sugar"],
+        ["wheat", "wheat", "wheat"]
+      ]
+    },
+    {
+      "id": "pumpkin_pie_craft",
+      "result": "pumpkin_pie",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["pumpkin", "sugar", "egg"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "cookie_craft",
+      "result": "cookie",
+      "resultCount": 8,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["wheat", "cocoa_beans", "wheat"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "beetroot_soup_craft",
+      "result": "beetroot_soup",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["beetroot", "beetroot", "beetroot"],
+        [null, "bowl", null]
+      ]
+    },
+    {
+      "id": "mushroom_stew_craft",
+      "result": "mushroom_stew",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["red_mushroom", "brown_mushroom", null],
+        [null, "bowl", null]
+      ]
+    },
+    {
+      "id": "rabbit_stew_craft",
+      "result": "rabbit_stew",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["baked_potato", "cooked_rabbit", "carrot"],
+        [null, "mushroom", null],
+        [null, "bowl", null]
+      ]
+    },
+    {
+      "id": "suspicious_stew_craft",
+      "result": "suspicious_stew",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["red_mushroom", "brown_mushroom", "flower"],
+        [null, "bowl", null]
+      ]
+    },
+    {
+      "id": "iron_ingot_smelt",
+      "result": "iron_ingot",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.7,
+      "pattern": [
+        ["raw_iron"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "gold_ingot_smelt",
+      "result": "gold_ingot",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.7,
+      "pattern": [
+        ["raw_gold"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "cooper_ingot_smelt",
+      "result": "cooper_ingot",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.7,
+      "pattern": [
+        ["raw_copper"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "netherite_ingot_craft",
+      "result": "netherite_ingot",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["netherite_scrap", "netherite_scrap", "netherite_scrap"],
+        ["netherite_scrap", "gold_ingot", "netherite_scrap"],
+        ["netherite_scrap", "netherite_scrap", "netherite_scrap"]
+      ]
+    },
+    {
+      "id": "charcoal_smelt",
+      "result": "charcoal",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.15,
+      "pattern": [
+        ["oak_log"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "netherite_scrap_smelt",
+      "result": "netherite_scrap",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 2.0,
+      "pattern": [
+        ["ancient_debris"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "stick_craft",
+      "result": "stick",
+      "resultCount": 4,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "oak_planks", null],
+        [null, "oak_planks", null]
+      ]
+    },
+    {
+      "id": "blaze_powder_craft",
+      "result": "blaze_powder",
+      "resultCount": 2,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "blaze_rod", null],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "ender_eye_craft",
+      "result": "ender_eye",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "ender_pearl", null],
+        [null, "blaze_powder", null]
+      ]
+    },
+    {
+      "id": "magma_cream_craft",
+      "result": "magma_cream",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "slime_ball", null],
+        [null, "blaze_powder", null]
+      ]
+    },
+    {
+      "id": "fermented_spider_eye_craft",
+      "result": "fermented_spider_eye",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["spider_eye", "brown_mushroom", "sugar"],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "sugar_craft",
+      "result": "sugar",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "sugar_cane", null],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "glistering_melon_slice_craft",
+      "result": "glistering_melon_slice",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gold_nugget", "gold_nugget", "gold_nugget"],
+        ["gold_nugget", "melon_slice", "gold_nugget"],
+        ["gold_nugget", "gold_nugget", "gold_nugget"]
+      ]
+    },
+    {
+      "id": "oak_planks_craft",
+      "result": "oak_planks",
+      "resultCount": 4,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "oak_log", null],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "oak_door_craft",
+      "result": "oak_door",
+      "resultCount": 3,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "oak_planks", null],
+        ["oak_planks", "oak_planks", null],
+        ["oak_planks", "oak_planks", null]
+      ]
+    },
+    {
+      "id": "oak_sign_craft",
+      "result": "oak_sign",
+      "resultCount": 3,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "oak_planks", "oak_planks"],
+        ["oak_planks", "oak_planks", "oak_planks"],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "oak_hanging_sign_craft",
+      "result": "oak_hanging_sign",
+      "resultCount": 6,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "chain", null],
+        ["stripped_oak_log", "stripped_oak_log", "stripped_oak_log"],
+        ["stripped_oak_log", "stripped_oak_log", "stripped_oak_log"]
+      ]
+    },
+    {
+      "id": "oak_boat_craft",
+      "result": "oak_boat",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["oak_planks", null, "oak_planks"],
+        ["oak_planks", "oak_planks", "oak_planks"]
+      ]
+    },
+    {
+      "id": "oak_chest_boat_craft",
+      "result": "oak_chest_boat",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "chest", null],
+        [null, "oak_boat", null]
+      ]
+    },
+    {
+      "id": "minecart_craft",
+      "result": "minecart",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["iron_ingot", null, "iron_ingot"],
+        ["iron_ingot", "iron_ingot", "iron_ingot"]
+      ]
+    },
+    {
+      "id": "chest_minecart_craft",
+      "result": "chest_minecart",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "chest", null],
+        [null, "minecart", null]
+      ]
+    },
+    {
+      "id": "furnace_minecart_craft",
+      "result": "furnace_minecart",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "furnace", null],
+        [null, "minecart", null]
+      ]
+    },
+    {
+      "id": "hopper_minecart_craft",
+      "result": "hopper_minecart",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "hopper", null],
+        [null, "minecart", null]
+      ]
+    },
+    {
+      "id": "carrot_on_a_stick_craft",
+      "result": "carrot_on_a_stick",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "fishing_rod", null],
+        [null, "carrot", null]
+      ]
+    },
+    {
+      "id": "warped_fungus_on_a_stick_craft",
+      "result": "warped_fungus_on_a_stick",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "fishing_rod", null],
+        [null, "warped_fungus", null]
+      ]
+    },
+    {
+      "id": "bucket_craft",
+      "result": "bucket",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["iron_ingot", null, "iron_ingot"],
+        [null, "iron_ingot", null]
+      ]
+    },
+    {
+      "id": "lead_craft",
+      "result": "lead",
+      "resultCount": 2,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["string", "string", "slime_ball"],
+        ["string", null, "string"]
+      ]
+    },
+    {
+      "id": "compass_craft",
+      "result": "compass",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "iron_ingot", null],
+        ["iron_ingot", "redstone", "iron_ingot"],
+        [null, "iron_ingot", null]
+      ]
+    },
+    {
+      "id": "recovery_compass_craft",
+      "result": "recovery_compass",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "echo_shard", null],
+        ["echo_shard", "compass", "echo_shard"],
+        [null, "echo_shard", null]
+      ]
+    },
+    {
+      "id": "clock_craft",
+      "result": "clock",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "gold_ingot", null],
+        ["gold_ingot", "redstone", "gold_ingot"],
+        [null, "gold_ingot", null]
+      ]
+    },
+    {
+      "id": "spyglass_craft",
+      "result": "spyglass",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "cooper_ingot", null],
+        [null, "cooper_ingot", null],
+        [null, "amethyst_shard", null]
+      ]
+    },
+    {
+      "id": "fishing_rod_craft",
+      "result": "fishing_rod",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, "stick"],
+        [null, "stick", "string"],
+        ["stick", null, "string"]
+      ]
+    },
+    {
+      "id": "shears_craft",
+      "result": "shears",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "iron_ingot", null],
+        ["iron_ingot", null, null]
+      ]
+    },
+    {
+      "id": "flint_and_steel_craft",
+      "result": "flint_and_steel",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "iron_ingot", null],
+        [null, "flint", null]
+      ]
+    },
+    {
+      "id": "fire_charge_craft",
+      "result": "fire_charge",
+      "resultCount": 3,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "gunpowder", null],
+        ["blaze_powder", "coal", null]
+      ]
+    },
+    {
+      "id": "brush_craft",
+      "result": "brush",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "feather", null],
+        [null, "cooper_ingot", "stick"]
+      ]
+    },
+    {
+      "id": "bundle_craft",
+      "result": "bundle",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, "string", null],
+        ["rabbit_hide", null, "rabbit_hide"],
+        ["rabbit_hide", "rabbit_hide", "rabbit_hide"]
+      ]
+    },
+    {
+      "id": "armor_stand_craft",
+      "result": "armor_stand",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["stick", "stick", "stick"],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "item_frame_craft",
+      "result": "item_frame",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["stick", "stick", "stick"],
+        ["stick", "leather", "stick"],
+        ["stick", "stick", "stick"]
+      ]
+    },
+    {
+      "id": "glow_item_frame_craft",
+      "result": "glow_item_frame",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "item_frame", null],
+        [null, "glow_ink_sac", null]
+      ]
+    },
+    {
+      "id": "melon_seeds_craft",
+      "result": "melon_seeds",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "melon_slice", null],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "pumpkin_seeds_craft",
+      "result": "pumpkin_seeds",
+      "resultCount": 4,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "pumpkin", null],
+        [null, null, null]
+      ]
+    },
+    {
+      "id": "dried_kelp_smelt",
+      "result": "dried_kelp",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.1,
+      "pattern": [
+        ["kelp"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "popped_chorus_fruit_smelt",
+      "result": "popped_chorus_fruit",
+      "resultCount": 1,
+      "type": "SMELTING",
+      "shapeless": false,
+      "experience": 0.1,
+      "pattern": [
+        ["chorus_fruit"],
+        [null],
+        [null]
+      ]
+    },
+    {
+      "id": "torch_craft",
+      "result": "torch",
+      "resultCount": 4,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "coal", null],
+        [null, "stick", null]
+      ]
+    },
+    {
+      "id": "lantern_craft",
+      "result": "lantern",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_nugget", "iron_nugget", "iron_nugget"],
+        ["iron_nugget", "torch", "iron_nugget"],
+        ["iron_nugget", "iron_nugget", "iron_nugget"]
+      ]
+    },
+    {
+      "id": "campfire_craft",
+      "result": "campfire",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["stick", "coal", "stick"],
+        ["oak_log", "oak_log", "oak_log"]
+      ]
+    },
+    {
+      "id": "repeater_craft",
+      "result": "repeater",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["redstone_torch", "redstone", "redstone_torch"],
+        ["stone", "stone", "stone"]
+      ]
+    },
+    {
+      "id": "comparator_craft",
+      "result": "comparator",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        ["redstone_torch", "redstone_torch", "redstone_torch"],
+        ["stone", "nether_quartz", "stone"]
+      ]
+    },
+    {
+      "id": "piston_craft",
+      "result": "piston",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["oak_planks", "oak_planks", "oak_planks"],
+        ["cobblestone", "iron_ingot", "cobblestone"],
+        ["cobblestone", "redstone", "cobblestone"]
+      ]
+    },
+    {
+      "id": "sticky_piston_craft",
+      "result": "sticky_piston",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        [null, null, null],
+        [null, "slime_ball", null],
+        [null, "piston", null]
+      ]
+    },
+    {
+      "id": "hopper_craft",
+      "result": "hopper",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["iron_ingot", null, "iron_ingot"],
+        ["iron_ingot", "chest", "iron_ingot"],
+        [null, "iron_ingot", null]
+      ]
+    },
+    {
+      "id": "dropper_craft",
+      "result": "dropper",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["cobblestone", "cobblestone", "cobblestone"],
+        ["cobblestone", null, "cobblestone"],
+        ["cobblestone", "redstone", "cobblestone"]
+      ]
+    },
+    {
+      "id": "dispenser_craft",
+      "result": "dispenser",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["cobblestone", "cobblestone", "cobblestone"],
+        ["cobblestone", "bow", "cobblestone"],
+        ["cobblestone", "redstone", "cobblestone"]
+      ]
+    },
+    {
+      "id": "tnt_craft",
+      "result": "tnt",
+      "resultCount": 1,
+      "type": "CRAFTING",
+      "shapeless": false,
+      "experience": 0.0,
+      "pattern": [
+        ["gunpowder", "sand", "gunpowder"],
+        ["sand", "gunpowder", "sand"],
+        ["gunpowder", "sand", "gunpowder"]
+      ]
+    }
+  ]
+}
